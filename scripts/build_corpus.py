@@ -182,8 +182,8 @@ def make_corpus() -> dict:
 
     payload = {
         "meta": {
-            "title_en": "Cue Shift: Spider-Man: Brand New Day Translation Profiles",
-            "title_zh": "字幕換聲：《蜘蛛俠：全新的一天》翻譯剖面",
+            "title_en": "S-Web of Words: Spider-Man: Brand New Day Translation Profiles",
+            "title_zh": "S-Web of Words：《蜘蛛俠：全新的一天》翻譯剖面",
             "corpus": "Spider-Man: Brand New Day (2026) English-Traditional Chinese subtitles",
             "entry_count": len(entries),
             "supplied_row_count": cleaning["supplied_rows"],
