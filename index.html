@@ -3,21 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="An interactive English-Chinese corpus explorer for nominal-to-verb translation patterns in subtitles.">
-    <title>Nominal / Verb | NV Atlas Corpus Explorer</title>
+    <meta name="description" content="An interactive 502-pair English-Cantonese subtitle corpus explorer.">
+    <title>Cue Shift | English-Cantonese Subtitle Explorer</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="assets/styles.css?v=3">
+    <link rel="stylesheet" href="assets/styles.css?v=8">
   </head>
   <body>
     <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
     <header class="site-header">
-      <a class="brand" href="index.html" aria-label="NV Atlas home">
+      <a class="brand" href="index.html" aria-label="Cue Shift home">
         <span class="brand-mark" aria-hidden="true">
-          <span>N</span><span>V</span>
+          <span>C</span><span>S</span>
         </span>
         <span class="brand-copy">
-          <strong>NV Atlas</strong>
-          <small data-i18n="brand.subtitle">Corpus explorer</small>
+          <strong>Cue Shift</strong>
+          <small data-i18n="brand.subtitle">Subtitle strategy explorer</small>
         </span>
       </a>
       <nav class="site-nav" aria-label="Main navigation">
@@ -37,11 +37,11 @@
     <main id="main">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow" data-i18n="home.eyebrow">A 500-pair English-Chinese subtitle corpus</p>
-          <h1 data-i18n="home.title">When nouns become verbs.</h1>
+          <p class="eyebrow" data-i18n="home.eyebrow">A 502-pair English-Cantonese subtitle corpus</p>
+          <h1 data-i18n="home.title">Every line arrives twice.</h1>
           <p class="hero-lede" data-i18n="home.lede">
-            Explore how English event and state nominals are unpacked as Chinese verbs, and
-            use linked views to compare meaning, syntax and translation choice.
+            Compare 502 supplied English-Cantonese film cues, then follow compaction,
+            explicitation, structural change and dialogue function across linked views.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#explorer" data-i18n="home.start">Explore the corpus</a>
@@ -51,16 +51,15 @@
         <aside class="hero-note" aria-labelledby="research-question-title">
           <p class="note-kicker" data-i18n="home.questionLabel">Research question</p>
           <h2 id="research-question-title" data-i18n="home.question">
-            Which kinds of English nominal meaning become Chinese verbs, and where does the
-            verb appear?
+            Which visible translation profiles recur across the supplied subtitle pairs?
           </h2>
           <p data-i18n="home.theory">
-            The analysis uses grammatical metaphor and transposition to treat verbalisation
-            as a meaningful shift in information packaging.
+            The analysis combines condensation, explicitation and transposition with
+            dialogue function and target length as explicit controls.
           </p>
           <div class="hero-stats" aria-live="polite">
-            <div><strong id="stat-entries">500</strong><span data-i18n="stat.entries">sentence pairs</span></div>
-            <div><strong id="stat-terms">0</strong><span data-i18n="stat.terms">English key terms</span></div>
+            <div><strong id="stat-entries">0</strong><span data-i18n="stat.entries">short cue pairs</span></div>
+            <div><strong id="stat-terms">0</strong><span data-i18n="stat.terms">dialogue functions</span></div>
             <div><strong id="stat-checked">0</strong><span data-i18n="stat.checked">human checked</span></div>
           </div>
         </aside>
@@ -70,22 +69,22 @@
         <div>
           <span class="status-dot" aria-hidden="true"></span>
           <strong id="provenance-title" data-i18n="home.sourceLabel">Corpus label</strong>
-          <span data-i18n="home.source">OpenSubtitles 2024 en-zh_CN, supplied as a 500-row CSV.</span>
+          <span data-i18n="home.source">502 complete unique pairs extracted from the supplied Final project.xlsx workbook and checked against its source subtitles.</span>
         </div>
         <a href="about.html#data-notes" data-i18n="home.sourceDetails">Read provenance and limitations</a>
       </section>
 
       <aside class="content-warning" aria-label="Content warning">
         <strong data-i18n="warning.label">Content note</strong>
-        <span data-i18n="warning.body">Subtitle dialogue may include profanity and mature themes.</span>
+        <span data-i18n="warning.body">Short film-dialogue excerpts may include profanity, violence and mature themes.</span>
       </aside>
 
       <section class="quality-banner" id="quality-banner" hidden>
         <div>
           <strong data-i18n="quality.title">Verification needed</strong>
           <p data-i18n="quality.body">
-            No entries are marked as human checked in the published dataset. Use the quality
-            check page to review a random sample before submission.
+            The seeded 50-entry review is complete. Continue checking further entries on the
+            quality check page.
           </p>
         </div>
         <a class="button compact" href="review.html" data-i18n="quality.action">Start 50-entry review</a>
@@ -105,9 +104,9 @@
 
         <div class="control-panel" aria-label="Corpus filters">
           <label class="search-field">
-            <span data-i18n="filter.search">Search source, translation or key term</span>
+            <span data-i18n="filter.search">Search English, Chinese or feature</span>
             <span class="search-input-wrap">
-              <input id="search-input" type="search" autocomplete="off" placeholder="e.g. attention, 注意, permission" data-i18n-placeholder="filter.searchPlaceholder">
+              <input id="search-input" type="search" autocomplete="off" placeholder="e.g. statement, 咩, expanded" data-i18n-placeholder="filter.searchPlaceholder">
               <button id="clear-search" class="icon-button" type="button" aria-label="Clear search">×</button>
             </span>
           </label>
@@ -115,10 +114,10 @@
             <span data-i18n="filter.category">Meaning category</span>
             <select id="category-filter">
               <option value="all" data-i18n="filter.allCategories">All categories</option>
-              <option value="communication" data-i18n="category.communication">Speech & thought</option>
-              <option value="control" data-i18n="category.control">Law & control</option>
-              <option value="affect" data-i18n="category.affect">Emotion & state</option>
-              <option value="process" data-i18n="category.process">Action & change</option>
+              <option value="condensation" data-i18n="category.condensation">Condensation</option>
+              <option value="explicitation" data-i18n="category.explicitation">Explicitation</option>
+              <option value="transposition" data-i18n="category.transposition">Transposition</option>
+              <option value="congruence" data-i18n="category.congruence">Congruence</option>
             </select>
           </label>
           <label>
@@ -130,12 +129,12 @@
             </select>
           </label>
           <label>
-            <span data-i18n="filter.realization">Chinese verb position</span>
+            <span data-i18n="filter.realization">Length band</span>
             <select id="realization-filter">
-              <option value="all" data-i18n="filter.allPositions">All positions</option>
-              <option value="verb-first" data-i18n="realization.verb-first">Verb-first</option>
-              <option value="modulated" data-i18n="realization.modulated">Modal / negative context</option>
-              <option value="embedded" data-i18n="realization.embedded">Embedded in predicate</option>
+              <option value="all" data-i18n="filter.allPositions">All length bands</option>
+              <option value="compact" data-i18n="realization.compact">Compact</option>
+              <option value="balanced" data-i18n="realization.balanced">Balanced</option>
+              <option value="expanded" data-i18n="realization.expanded">Expanded</option>
             </select>
           </label>
           <div class="control-actions">
@@ -154,19 +153,14 @@
             <div class="chart-heading">
               <div>
                 <p class="chart-index">01</p>
-                <h3 data-i18n="network.title">Bilingual network map</h3>
+                <h3 data-i18n="network.title">Dialogue function network</h3>
               </div>
               <span class="chart-type" data-i18n="chart.relational">Relational</span>
             </div>
             <p class="chart-caption" data-i18n="network.caption">
-              Which English nominals repeatedly resolve to the same Chinese verbs?
+              Which dialogue functions recur in each translation profile?
             </p>
             <div class="network-controls">
-              <label>
-                <span data-i18n="network.top">Top English terms</span>
-                <input id="network-top" type="range" min="6" max="20" value="12">
-                <output id="network-top-output">12</output>
-              </label>
               <label>
                 <span data-i18n="network.weight">Minimum link weight</span>
                 <input id="network-weight" type="range" min="1" max="8" value="1">
@@ -180,7 +174,7 @@
             </div>
             <div class="network-stage" id="network-stage">
               <svg id="network-svg" viewBox="0 0 1000 520" role="img" aria-labelledby="network-title-desc">
-                <title id="network-title-desc">Interactive network of English nominal terms and Chinese translation verbs</title>
+                <title id="network-title-desc">Interactive network of English dialogue functions and Cantonese translation profiles</title>
               </svg>
             </div>
             <p class="chart-help" data-i18n="network.help">
@@ -193,16 +187,16 @@
             <div class="chart-heading">
               <div>
                 <p class="chart-index">02</p>
-                <h3 data-i18n="treemap.title">Meaning × verb position</h3>
+                <h3 data-i18n="treemap.title">Profile × length band</h3>
               </div>
               <span class="chart-type" data-i18n="chart.hierarchical">Hierarchical</span>
             </div>
             <p class="chart-caption" data-i18n="treemap.caption">
-              How does each meaning category divide across Chinese verb positions?
+              How are the four translation profiles distributed across compact, balanced and expanded target lengths?
             </p>
             <div class="treemap-stage" id="treemap-stage" aria-live="polite"></div>
             <p class="chart-help" data-i18n="treemap.help">
-              Select a rectangle to apply its category and verb-position filters.
+              Select a rectangle to apply its profile and length-band filters.
             </p>
           </article>
 
@@ -210,16 +204,16 @@
             <div class="chart-heading">
               <div>
                 <p class="chart-index">03</p>
-                <h3 data-i18n="heatmap.title">Frequent-term heatmap</h3>
+                <h3 data-i18n="heatmap.title">Dialogue function by profile</h3>
               </div>
               <span class="chart-type" data-i18n="chart.distributional">Distributional</span>
             </div>
             <p class="chart-caption" data-i18n="heatmap.caption">
-              Where do the most frequent English nominals cluster across meaning categories?
+              Which dialogue functions concentrate in each translation profile?
             </p>
             <div class="heatmap-scroll" id="heatmap-stage" aria-live="polite"></div>
             <p class="chart-help" data-i18n="heatmap.help">
-              Select a cell to combine its category and key-term search.
+              Select a populated cell to combine its profile and dialogue-function filters.
             </p>
           </article>
         </div>
@@ -239,12 +233,12 @@
             <table>
               <thead>
                 <tr>
-                  <th><button data-sort="id">ID <span aria-hidden="true">↕</span></button></th>
+                  <th><button data-sort="id">Workbook row <span aria-hidden="true">↕</span></button></th>
                   <th><button data-sort="source_text" data-i18n="table.source">English source</button></th>
-                  <th><button data-sort="target_text" data-i18n="table.target">Chinese translation</button></th>
-                  <th><button data-sort="key_term" data-i18n="table.term">Key term</button></th>
-                  <th><button data-sort="category" data-i18n="table.category">Category</button></th>
-                  <th><button data-sort="realization" data-i18n="table.position">Verb position</button></th>
+                  <th><button data-sort="target_text" data-i18n="table.target">Cantonese subtitle</button></th>
+                  <th><button data-sort="key_term" data-i18n="table.term">Dialogue function</button></th>
+                  <th><button data-sort="category" data-i18n="table.category">Translation profile</button></th>
+                  <th><button data-sort="realization" data-i18n="table.position">Length band</button></th>
                   <th><button data-sort="human_checked" data-i18n="table.checked">Checked</button></th>
                 </tr>
               </thead>
@@ -263,10 +257,11 @@
     </main>
 
     <footer class="site-footer">
-      <p><strong>NV Atlas</strong> · <span data-i18n="footer.project">Translation Technology final project</span></p>
+      <p><strong>Cue Shift</strong> · <span data-i18n="footer.project">Translation Technology final project</span></p>
       <p data-i18n="footer.note">A static, open corpus explorer with no tracking.</p>
     </footer>
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
-    <script src="assets/app.js?v=3" defer></script>
+    <script src="data/corpus.js?v=1" defer></script>
+    <script src="assets/app.js?v=9" defer></script>
   </body>
 </html>

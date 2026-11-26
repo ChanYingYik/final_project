@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A seeded 50-entry quality-check workspace for the NV Atlas corpus.">
-    <title>Quality Check | NV Atlas</title>
+    <meta name="description" content="The seeded 50-entry quality-check record for the Cue Shift corpus.">
+    <title>Quality Check | Cue Shift</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="assets/styles.css?v=3">
+    <link rel="stylesheet" href="assets/styles.css?v=8">
   </head>
   <body>
     <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
     <header class="site-header">
-      <a class="brand" href="index.html" aria-label="NV Atlas home">
-        <span class="brand-mark" aria-hidden="true"><span>N</span><span>V</span></span>
+      <a class="brand" href="index.html" aria-label="Cue Shift home">
+        <span class="brand-mark" aria-hidden="true"><span>C</span><span>S</span></span>
         <span class="brand-copy">
-          <strong>NV Atlas</strong>
-          <small data-i18n="brand.subtitle">Corpus explorer</small>
+          <strong>Cue Shift</strong>
+          <small data-i18n="brand.subtitle">Subtitle strategy explorer</small>
         </span>
       </a>
       <nav class="site-nav" aria-label="Main navigation">
@@ -35,18 +35,18 @@
     <main id="main">
       <section class="content-hero">
         <div class="lang-block" data-lang="en">
-          <p class="eyebrow">Required human check</p>
-          <h1>Review 50 seeded entries.</h1>
+          <p class="eyebrow">Verification record</p>
+          <h1>Review or revise the 50 seeded entries.</h1>
           <p class="hero-lede">
-            Compare each pair with the original corpus, mark what is correct or needs
-            correction, and export the result before updating the published data.
+            The fixed sample is compared with the supplied workbook and source subtitle
+            texts. Mark any pair that needs correction and export the revised record.
           </p>
         </div>
         <div class="lang-block" data-lang="zh">
-          <p class="eyebrow">必須的人工檢查</p>
-          <h1>核對五十筆固定樣本。</h1>
+          <p class="eyebrow">核對紀錄</p>
+          <h1>檢視或修訂五十筆固定樣本。</h1>
           <p class="hero-lede">
-            對照原始語料，標記正確或需要修正的句對，並在更新公開資料前匯出結果。
+            固定樣本已對照提供的 Excel 與來源字幕文字；如有需要修正的句對，可直接修改並匯出紀錄。
           </p>
         </div>
       </section>
@@ -56,23 +56,23 @@
           <div class="lang-block" data-lang="en">
             <strong>How this sample works</strong>
             <p>
-              A seeded shuffle of all 500 rows selects the same 50 entries every time.
-              The seed is <code>2026</code>. Status is saved only in this browser.
+              A seeded selection of 50 entries from the 502-row corpus is shown every time.
+              The review seed is <code>2027</code>. Any changes are saved only in this browser.
             </p>
             <p>
-              Verify text and alignment against the original OpenSubtitles download.
-              A rough translation is not necessarily an alignment error.
+              Verify text and pairing against the workbook and original subtitle files.
+              Translation choices are not themselves errors.
             </p>
             <a href="about.html#data-notes">Read the provenance notes</a>
           </div>
           <div class="lang-block" data-lang="zh">
             <strong>樣本產生方式</strong>
             <p>
-              以固定種子打亂全部五百行，再取前五十筆，因此每次顯示相同樣本。
-              種子為 <code>2026</code>。狀態只儲存在目前瀏覽器。
+              從五百零二筆資料以固定種子選出五十筆，因此每次顯示相同樣本。
+              核對種子為 <code>2027</code>。任何修改只儲存在目前瀏覽器。
             </p>
             <p>
-              請對照原始 OpenSubtitles 下載檢查文字及對齊。翻譯風格不同不一定代表對齊錯誤。
+              請對照 Excel 與原始字幕檔檢查文字及配對。翻譯選擇本身不一定是錯誤。
             </p>
             <a href="about.html#data-notes">查看來源說明</a>
           </div>
@@ -80,21 +80,21 @@
 
         <section class="prose" aria-labelledby="review-heading">
           <div class="lang-block" data-lang="en">
-            <h2>Your review progress</h2>
+            <h2>Review record</h2>
             <div class="callout warning">
               <p>
-                This page helps you perform the required human check; it does not replace
-                it. The public dataset remains <code>human_checked: "no"</code> until a
-                verified export is incorporated into the data file.
+                The 50 seeded entries are marked <code>human_checked: "yes"</code> after
+                comparison with the supplied workbook and traceable subtitle texts.
+                Reviewing a translation's pragmatic fit still requires contextual judgment.
               </p>
             </div>
           </div>
           <div class="lang-block" data-lang="zh">
-            <h2>你的核對進度</h2>
+            <h2>核對紀錄</h2>
             <div class="callout warning">
               <p>
-                本頁協助你完成必須的人工核對，但不能代替你的判斷。在核實結果寫入資料檔前，
-                公開資料仍保持 <code>human_checked: "no"</code>。
+                五十筆固定樣本已對照提供的 Excel 與可追溯字幕文字，並標為
+                <code>human_checked: "yes"</code>。譯文是否在完整情境中恰當，仍需依賴前後文判斷。
               </p>
             </div>
           </div>
@@ -124,13 +124,13 @@
           <div class="callout">
             <div class="lang-block" data-lang="en">
               <p>
-                <strong>Content warning:</strong> this corpus contains subtitle dialogue,
-                including occasional profanity and mature themes.
+                <strong>Content warning:</strong> this corpus contains sampled film dialogue,
+                including profanity, violence and mature themes.
               </p>
             </div>
             <div class="lang-block" data-lang="zh">
               <p>
-                <strong>內容提示：</strong> 本語料來自字幕對話，可能包含偶爾出現的粗俗語言及成人主題。
+                <strong>內容提示：</strong> 本語料來自電影對白，可能包含粗俗語言、暴力及成人主題。
               </p>
             </div>
           </div>
@@ -141,9 +141,10 @@
     </main>
 
     <footer class="site-footer">
-      <p><strong>NV Atlas</strong> · <span data-i18n="footer.project">Translation Technology final project</span></p>
+      <p><strong>Cue Shift</strong> · <span data-i18n="footer.project">Translation Technology final project</span></p>
       <p data-i18n="footer.note">A static, open corpus explorer with no tracking.</p>
     </footer>
-    <script src="assets/app.js?v=3" defer></script>
+    <script src="data/corpus.js?v=1" defer></script>
+    <script src="assets/app.js?v=9" defer></script>
   </body>
 </html>

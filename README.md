@@ -1,55 +1,50 @@
-# Nominal / Verb
+# Cue Shift
 
-An interactive English-Chinese corpus explorer for the Translation Technology
-final project. It studies how English nominal meanings are realised as Chinese
-verbs in 500 supplied subtitle sentence pairs.
+Static English-Cantonese subtitle corpus explorer for the 2026R1 Translation
+Technology final project.
 
-## Features
+## Deliverable
 
-- Keyword search and linked filters for category, verb position and human check.
-- Interactive bilingual network, hierarchy (treemap), heatmap and data grid.
-- Cross-view selection and URL-shareable filter state.
-- English / Traditional Chinese interface switch.
-- Filtered CSV export.
-- Reproducible 50-entry quality-check sample with local result export.
-- Learning report, codebook, AI use declaration and provenance notes.
+- 502 complete unique subtitle pairs, each retaining its source workbook row.
+- Search plus filters for translation profile, human-check status and target length.
+- Linked dialogue-function network, profile/length treemap and profile/function heatmap.
+- Sortable, paged data grid with filtered CSV export.
+- English and Traditional Chinese interface.
+- Learning report, bilingual codebook, 50-entry quality-check record and AI-use declaration.
 
-## Local preview
+## Preview
 
-The site is static and has no build dependencies. Serve the repository root:
+`index.html` can be opened directly because the corpus is also embedded in
+`data/corpus.js`. The JSON file is retained for the published site.
+
+For a server-based preview:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then open <http://localhost:8000>.
+Open <http://127.0.0.1:8000>.
 
-## Rebuild the browser data
+## Rebuild the corpus
 
-The original supplied file is `NVAtlas-AI-Agent.csv`. To preserve its source text
-and regenerate the analysis fields:
+The build starts from the source snapshot in `scripts/source-rows.json`.
 
 ```bash
 python3 scripts/build_corpus.py
 ```
 
-This writes `data/corpus.json`. The script validates that there are exactly 500
-non-empty rows and applies the coding rules published in `codebook.html`.
+This writes `data/corpus.json`, `data/corpus.js` and `data/corpus.csv`. The local
+JavaScript copy lets `index.html` work when opened directly. The public folder
+contains short extracts only, not full subtitle tracks.
 
-## Data status
+## Publish
 
-The source, translation, English nominal and Chinese verb are preserved from the
-supplied CSV. The OpenSubtitles 2024 en-zh_CN label is inferred from the course
-example and sentence-ID format; it still needs confirmation against the original
-download.
+The site is dependency-free and ready for GitHub Pages. Put the contents of this
+folder at the repository root, then enable Pages from the main branch and root
+folder.
 
-No row is marked as human checked in the published dataset. Complete the seeded
-50-entry review in `review.html` before submission and incorporate the verified
-results into `data/corpus.json`. This human check is intentionally not fabricated.
+## Before public submission
 
-## GitHub Pages
-
-The site is designed for GitHub Pages from the `main` branch and repository root.
-Expected URL:
-
-<https://chanyingyik.github.io/nvatlas-test/>
+Confirm the source download location and licence. The supplied Excel does not
+state either, and the file labels alone do not establish permission to publish
+the excerpts.
