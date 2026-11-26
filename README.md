@@ -1,11 +1,12 @@
 # Cue Shift
 
-Static English-Cantonese subtitle corpus explorer for the 2026R1 Translation
-Technology final project.
+Static English-Cantonese subtitle corpus explorer for *Spider-Man: Brand New
+Day* (2026), built for the 2026R1 Translation Technology final project.
 
 ## Deliverable
 
-- 502 complete unique subtitle pairs, each retaining its source workbook row.
+- 502 complete unique subtitle pairs from Spider-Man: Brand New Day, each
+  retaining its source workbook row.
 - Search plus filters for translation profile, human-check status and target length.
 - Linked dialogue-function network, profile/length treemap and profile/function heatmap.
 - Sortable, paged data grid with filtered CSV export.
