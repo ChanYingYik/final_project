@@ -9,16 +9,16 @@
 
   const I18N = {
     en: {
-      "brand.subtitle": "Subtitle strategy explorer",
+      "brand.subtitle": "Spider-Man subtitle explorer",
       "nav.explore": "Explore",
       "nav.report": "Learning report",
       "nav.codebook": "Codebook",
       "nav.review": "Quality check",
       "nav.ai": "AI use",
       "a11y.skip": "Skip to content",
-      "home.eyebrow": "A 502-pair English-Cantonese subtitle corpus",
+      "home.eyebrow": "Spider-Man: Brand New Day · 502 subtitle pairs",
       "home.title": "Every line arrives twice.",
-      "home.lede": "Compare 502 supplied English-Cantonese film cues, then follow compaction, explicitation, structural change and dialogue function across linked views.",
+      "home.lede": "Compare 502 English-Cantonese subtitle cues from Spider-Man: Brand New Day, then follow compaction, explicitation, structural change and dialogue function across linked views.",
       "home.start": "Explore the corpus",
       "home.read": "Read the research",
       "home.questionLabel": "Research question",
@@ -27,8 +27,8 @@
       "stat.entries": "short cue pairs",
       "stat.terms": "dialogue functions",
       "stat.checked": "human checked",
-      "home.sourceLabel": "Corpus label",
-      "home.source": "502 complete unique pairs extracted from the supplied Final project.xlsx workbook and checked against its source subtitles.",
+      "home.sourceLabel": "Spider-Man source",
+      "home.source": "Spider-Man: Brand New Day · 502 unique English-Cantonese subtitle pairs extracted from the supplied workbook.",
       "home.sourceDetails": "Read provenance and limitations",
       "quality.title": "Verification needed",
       "quality.body": "The seeded 50-entry review is complete. Continue checking further entries on the quality check page.",
@@ -86,10 +86,10 @@
       "table.checked": "Checked",
       "table.previous": "Previous",
       "table.next": "Next",
-      "footer.project": "Translation Technology final project",
-      "footer.note": "A static, open corpus explorer with no tracking.",
+      "footer.project": "Spider-Man: Brand New Day corpus · Translation Technology final project",
+      "footer.note": "A static bilingual subtitle explorer with no tracking.",
       "warning.label": "Content note",
-      "warning.body": "Short film-dialogue excerpts may include profanity, violence and mature themes.",
+      "warning.body": "Spider-Man: Brand New Day dialogue excerpts may include profanity, violence and mature themes.",
       "toast.copied": "View link copied.",
       "toast.reset": "Filters reset.",
       "toast.empty": "No entries match this view.",
@@ -103,16 +103,16 @@
       "review.reset": "Reset local review",
     },
     zh: {
-      "brand.subtitle": "字幕策略探索器",
+      "brand.subtitle": "蜘蛛俠字幕探索器",
       "nav.explore": "探索語料",
       "nav.report": "學習報告",
       "nav.codebook": "編碼簿",
       "nav.review": "品質檢查",
       "nav.ai": "AI 使用",
       "a11y.skip": "跳至內容",
-      "home.eyebrow": "五百零二組英粵字幕語料",
+      "home.eyebrow": "《蜘蛛俠：全新的一天》· 五百零二組字幕",
       "home.title": "每句對白，都經歷兩次抵達。",
-      "home.lede": "對照五百零二組提供的英粵電影字幕，並沿著互相連動的圖表追蹤壓縮、明示、結構轉換與對白功能。",
+      "home.lede": "對照《蜘蛛俠：全新的一天》五百零二組英粵字幕，並沿著互相連動的圖表追蹤壓縮、明示、結構轉換與對白功能。",
       "home.start": "開始探索",
       "home.read": "閱讀研究報告",
       "home.questionLabel": "研究問題",
@@ -121,8 +121,8 @@
       "stat.entries": "短句對",
       "stat.terms": "對白功能",
       "stat.checked": "人工核對",
-      "home.sourceLabel": "語料標示",
-      "home.source": "從使用者提供的 Final project.xlsx 抽出五百零二組完整且不重複的句對，並對照來源字幕。",
+      "home.sourceLabel": "蜘蛛俠字幕來源",
+      "home.source": "《蜘蛛俠：全新的一天》· 從提供的 Excel 抽出五百零二組完整且不重複的英粵字幕句對。",
       "home.sourceDetails": "查看來源與限制",
       "quality.title": "仍需人工核對",
       "quality.body": "固定種子的五十筆核對已完成。你可在品質檢查頁繼續檢查更多資料。",
@@ -180,10 +180,10 @@
       "table.checked": "核對",
       "table.previous": "上一頁",
       "table.next": "下一頁",
-      "footer.project": "翻譯科技期末專題",
-      "footer.note": "不含追蹤功能的靜態公開語料網站。",
+      "footer.project": "《蜘蛛俠：全新的一天》語料 · 翻譯科技期末專題",
+      "footer.note": "不含追蹤功能的靜態雙語字幕探索網站。",
       "warning.label": "內容提示",
-      "warning.body": "電影片段短句可能包含粗俗語言、暴力及成人主題。",
+      "warning.body": "《蜘蛛俠：全新的一天》字幕摘錄可能包含粗俗語言、暴力及成人主題。",
       "toast.copied": "已複製檢視連結。",
       "toast.reset": "已重設篩選。",
       "toast.empty": "目前檢視沒有符合資料。",
@@ -200,24 +200,24 @@
 
   const PAGE_TITLES = {
     explore: {
-      en: "Cue Shift | English-Cantonese Subtitle Explorer",
-      zh: "字幕換聲｜英粵字幕探索器",
+      en: "Cue Shift | Spider-Man: Brand New Day Subtitle Explorer",
+      zh: "字幕換聲｜《蜘蛛俠：全新的一天》字幕探索器",
     },
     report: {
-      en: "Learning Report | Cue Shift",
-      zh: "學習報告｜字幕換聲",
+      en: "Learning Report | Spider-Man: Brand New Day",
+      zh: "學習報告｜《蜘蛛俠：全新的一天》",
     },
     codebook: {
-      en: "Codebook | Cue Shift",
-      zh: "編碼簿｜字幕換聲",
+      en: "Codebook | Spider-Man: Brand New Day",
+      zh: "編碼簿｜《蜘蛛俠：全新的一天》",
     },
     review: {
-      en: "Quality Check | Cue Shift",
-      zh: "品質檢查｜字幕換聲",
+      en: "Quality Check | Spider-Man: Brand New Day",
+      zh: "品質檢查｜《蜘蛛俠：全新的一天》",
     },
     about: {
-      en: "AI Use & Data Notes | Cue Shift",
-      zh: "AI 使用與資料說明｜字幕換聲",
+      en: "AI Use & Data Notes | Spider-Man: Brand New Day",
+      zh: "AI 使用與資料說明｜《蜘蛛俠：全新的一天》",
     },
   };
 
@@ -493,7 +493,7 @@
       message.setAttribute("x", "500");
       message.setAttribute("y", "260");
       message.setAttribute("text-anchor", "middle");
-      message.setAttribute("fill", "#5d6a62");
+      message.setAttribute("fill", "#626977");
       message.textContent = t("toast.empty");
       svg.append(message);
       return;
@@ -538,10 +538,10 @@
     const visibleLinks = links.filter((link) => targetSet.has(link.target));
 
     const categoryColors = {
-      condensation: "#406c83",
-      explicitation: "#a87c31",
-      transposition: "#d56a4c",
-      congruence: "#2d7a5c",
+      condensation: "#1b4f87",
+      explicitation: "#bd1622",
+      transposition: "#c15a1d",
+      congruence: "#6b3551",
     };
     const positions = new Map();
     const placeColumn = (nodes, x) => {
@@ -606,7 +606,7 @@
 
       const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
       circle.setAttribute("r", String(radius));
-      circle.setAttribute("fill", type === "target" ? "#dfece3" : categoryColors[extra] || "#1f5945");
+      circle.setAttribute("fill", type === "target" ? "#f6dde1" : categoryColors[extra] || "#bd1622");
       const title = document.createElementNS("http://www.w3.org/2000/svg", "title");
       title.textContent = `${displayName}: ${count}`;
       circle.append(title);
@@ -929,12 +929,12 @@
         const cell = document.createElement("td");
         const count = counts.get(`${category}\u0000${term}`) || 0;
         const alpha = count ? 0.12 + (count / maximum) * 0.73 : 0;
-        cell.style.backgroundColor = `rgba(31, 89, 69, ${alpha})`;
+        cell.style.backgroundColor = `rgba(189, 22, 34, ${alpha})`;
         const button = document.createElement("button");
         button.type = "button";
         button.textContent = count ? String(count) : "";
         button.disabled = !count;
-        button.style.color = alpha > 0.55 ? "#fffefa" : "#18221d";
+        button.style.color = alpha > 0.55 ? "#fffdfc" : "#171c27";
         button.setAttribute(
           "aria-label",
           `${categoryLabel(category)}, ${term}: ${count}`,
