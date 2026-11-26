@@ -1,4 +1,4 @@
-# Cue Shift
+# S-Web of Words
 
 Static English-Cantonese subtitle corpus explorer for *Spider-Man: Brand New
 Day* (2026), built for the 2026R1 Translation Technology final project.
