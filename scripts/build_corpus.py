@@ -145,8 +145,9 @@ def make_corpus() -> dict:
                 "source_text": source_text,
                 "target_text": target_text,
                 "source": (
-                    "Final project.xlsx, worksheet 工作表1, row "
-                    f"{row_number}; supplied subtitle pair collected {COLLECTION_DATE}"
+                    "Spider-Man: Brand New Day (2026), English-Traditional Chinese "
+                    f"subtitles; Final project.xlsx worksheet 工作表1, row {row_number}; "
+                    f"supplied subtitle pair collected {COLLECTION_DATE}"
                 ),
                 "category": category,
                 "human_checked": "yes" if row_number in checked else "no",
@@ -181,9 +182,9 @@ def make_corpus() -> dict:
 
     payload = {
         "meta": {
-            "title_en": "Cue Shift: Translation Profiles in English-Cantonese Subtitles",
-            "title_zh": "字幕換聲：英粵字幕翻譯剖面",
-            "corpus": "English-Traditional Chinese subtitle pairs supplied in Final project.xlsx",
+            "title_en": "Cue Shift: Spider-Man: Brand New Day Translation Profiles",
+            "title_zh": "字幕換聲：《蜘蛛俠：全新的一天》翻譯剖面",
+            "corpus": "Spider-Man: Brand New Day (2026) English-Traditional Chinese subtitles",
             "entry_count": len(entries),
             "supplied_row_count": cleaning["supplied_rows"],
             "supplied_pair_count": cleaning["supplied_pairs"],
