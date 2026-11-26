@@ -9,7 +9,7 @@ Day* (2026), built for the 2026R1 Translation Technology final project.
   retaining its source workbook row.
 - Search plus filters for translation profile, human-check status and target length.
 - Linked dialogue-function network, profile/length treemap and profile/function heatmap.
-- Named-character grouping, Cantonese/written-Chinese register analysis and shareable entry-detail panels.
+- Cantonese colloquial/written-Chinese register analysis and shareable entry-detail panels.
 - Sortable, paged data grid with filtered CSV export.
 - English and Traditional Chinese interface.
 - Learning report, bilingual codebook, 50-entry quality-check record and AI-use declaration.
