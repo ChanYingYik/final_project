@@ -578,7 +578,7 @@ main {
   top: 78px;
   z-index: 20;
   display: grid;
-  grid-template-columns: minmax(220px, 1.35fr) repeat(5, minmax(125px, 0.7fr)) auto;
+  grid-template-columns: minmax(220px, 1.35fr) repeat(4, minmax(125px, 0.72fr)) auto;
   gap: 0.75rem;
   align-items: end;
   padding: 1rem;
@@ -1100,7 +1100,6 @@ main {
   margin-top: 1rem;
 }
 
-.character-stage,
 .register-stage {
   min-height: 250px;
   margin-top: 0.9rem;
@@ -1110,66 +1109,14 @@ main {
   border-radius: 14px;
 }
 
-.character-bars,
 .register-bars {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
 }
 
-.character-row {
-  display: grid;
-  grid-template-columns: minmax(120px, 175px) minmax(90px, 1fr) 3ch;
-  align-items: center;
-  gap: 0.6rem;
-}
-
-.character-name {
-  padding: 0;
-  overflow: hidden;
-  color: var(--ink);
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-  font-size: 0.7rem;
-  font-weight: 700;
-  text-align: left;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.character-name:hover,
-.character-name:focus {
-  color: var(--green);
-  outline: 2px solid var(--ink);
-  outline-offset: 2px;
-}
-
-.character-track {
-  display: flex;
-  min-height: 20px;
-  overflow: hidden;
-  background: var(--paper-deep);
-  border-radius: 999px;
-}
-
-.character-segment {
-  min-width: 4px;
-  padding: 0;
-  border: 0;
-  cursor: pointer;
-}
-
-.character-segment:hover,
-.character-segment:focus {
-  outline: 2px solid var(--ink);
-  outline-offset: -2px;
-}
-
-.character-row > strong {
-  color: var(--muted);
-  font-size: 0.72rem;
-  text-align: right;
+.analysis-grid.register-only {
+  grid-template-columns: 1fr;
 }
 
 .register-row {
@@ -1204,6 +1151,10 @@ main {
   height: 100%;
   background: var(--green);
   border-radius: inherit;
+}
+
+.register-row.cantonese_colloquial .register-fill {
+  background: var(--green);
 }
 
 .register-row.mixed_register .register-fill {
