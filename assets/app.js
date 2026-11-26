@@ -4,6 +4,21 @@
   const PAGE = document.documentElement.dataset.page || "explore";
   const CATEGORY_ORDER = ["condensation", "explicitation", "transposition", "congruence"];
   const REALIZATION_ORDER = ["compact", "balanced", "expanded"];
+  const CHARACTER_ORDER = [
+    "peter_spider",
+    "scorpion",
+    "ned",
+    "mj",
+    "max",
+    "metzger",
+    "frank",
+    "cindy",
+    "leshy",
+    "other",
+    "multiple",
+    "none",
+  ];
+  const REGISTER_ORDER = ["cantonese_leaning", "mixed_register", "written_chinese"];
   const REVIEW_KEY = "nv-human-checks-v1";
   const PAGE_SIZE = 12;
 
@@ -46,6 +61,10 @@
       "filter.no": "No",
       "filter.realization": "Length band",
       "filter.allPositions": "All length bands",
+      "filter.character": "Named character",
+      "filter.allCharacters": "All character groups",
+      "filter.register": "Chinese register",
+      "filter.allRegisters": "All registers",
       "filter.reset": "Reset",
       "filter.copy": "Copy view link",
       "category.condensation": "Condensation",
@@ -55,6 +74,21 @@
       "realization.compact": "Compact",
       "realization.balanced": "Balanced",
       "realization.expanded": "Expanded",
+      "character.peter_spider": "Peter Parker / Spider-Man",
+      "character.scorpion": "Scorpion",
+      "character.ned": "Ned",
+      "character.mj": "MJ",
+      "character.max": "V-Max",
+      "character.metzger": "Director Metzger",
+      "character.frank": "Frank",
+      "character.cindy": "Cindy",
+      "character.leshy": "Leshy",
+      "character.other": "Other named character",
+      "character.multiple": "Multiple named characters",
+      "character.none": "No named character",
+      "register.cantonese_leaning": "Cantonese-leaning",
+      "register.mixed_register": "Mixed register",
+      "register.written_chinese": "Written Chinese",
       "function.statement": "Statement",
       "function.question": "Question",
       "function.command": "Command",
@@ -75,6 +109,12 @@
       "heatmap.title": "Dialogue function by profile",
       "heatmap.caption": "Which English line functions concentrate in each translation profile?",
       "heatmap.help": "Select a populated cell to combine its profile and dialogue-function filters.",
+      "characterChart.title": "Named character patterns",
+      "characterChart.caption": "Which named characters appear alongside each translation profile?",
+      "characterChart.help": "Only character names stated in the source or subtitle are grouped. This is not speaker attribution.",
+      "registerChart.title": "Cantonese and written Chinese",
+      "registerChart.caption": "How do Cantonese lexical markers and written-Chinese forms distribute across the corpus?",
+      "registerChart.help": "Select a register to filter the corpus. This is a text-based lexical measure, not an audio judgment.",
       "table.title": "Corpus data",
       "table.caption": "Sort the current result set, inspect every field, or export it as CSV.",
       "table.export": "Export filtered CSV",
@@ -83,6 +123,8 @@
       "table.term": "Dialogue function",
       "table.category": "Translation profile",
       "table.position": "Length band",
+      "table.character": "Character",
+      "table.register": "Register",
       "table.checked": "Checked",
       "table.previous": "Previous",
       "table.next": "Next",
@@ -101,6 +143,17 @@
       "review.remaining": "remaining",
       "review.export": "Export review results",
       "review.reset": "Reset local review",
+      "detail.title": "Entry details",
+      "detail.open": "View details",
+      "detail.close": "Close entry details",
+      "detail.why": "Why this profile",
+      "detail.source": "Source",
+      "detail.previous": "Previous entry",
+      "detail.next": "Next entry",
+      "detail.copy": "Copy entry link",
+      "detail.copied": "Entry link copied.",
+      "detail.charactersEmpty": "No character name stated",
+      "detail.markersEmpty": "None detected",
     },
     zh: {
       "brand.subtitle": "蜘蛛俠字幕探索器",
@@ -140,6 +193,10 @@
       "filter.no": "否",
       "filter.realization": "長度區間",
       "filter.allPositions": "全部長度區間",
+      "filter.character": "具名字角色",
+      "filter.allCharacters": "全部角色分組",
+      "filter.register": "中文語域",
+      "filter.allRegisters": "全部語域",
       "filter.reset": "重設",
       "filter.copy": "複製檢視連結",
       "category.condensation": "壓縮",
@@ -149,6 +206,21 @@
       "realization.compact": "精簡",
       "realization.balanced": "均衡",
       "realization.expanded": "擴展",
+      "character.peter_spider": "彼得柏加／蜘蛛俠",
+      "character.scorpion": "蠍子人",
+      "character.ned": "尼特",
+      "character.mj": "MJ",
+      "character.max": "V-Max",
+      "character.metzger": "梅茨格局長",
+      "character.frank": "法蘭克",
+      "character.cindy": "仙迪",
+      "character.leshy": "萊希",
+      "character.other": "其他具名角色",
+      "character.multiple": "多位具名角色",
+      "character.none": "未具名角色",
+      "register.cantonese_leaning": "粵語傾向",
+      "register.mixed_register": "混合語域",
+      "register.written_chinese": "書面中文",
       "function.statement": "陳述",
       "function.question": "提問",
       "function.command": "指令",
@@ -169,6 +241,12 @@
       "heatmap.title": "對白功能與翻譯剖面",
       "heatmap.caption": "哪些英文對白功能集中於各翻譯剖面？",
       "heatmap.help": "點擊有數字的方格，同時套用剖面與對白功能搜尋。",
+      "characterChart.title": "具名角色分佈",
+      "characterChart.caption": "哪些具名角色與各翻譯剖面一同出現？",
+      "characterChart.help": "只按原文或字幕中明確出現的角色名分組，不代表說話者辨識。",
+      "registerChart.title": "粵語與書面中文",
+      "registerChart.caption": "粵語詞彙標記與書面中文句式在語料中如何分佈？",
+      "registerChart.help": "點擊語域可篩選語料。這是文字標記分析，不是語音判斷。",
       "table.title": "語料資料",
       "table.caption": "排序目前結果、檢視完整欄位，或匯出 CSV。",
       "table.export": "匯出目前結果",
@@ -177,6 +255,8 @@
       "table.term": "對白功能",
       "table.category": "翻譯剖面",
       "table.position": "長度區間",
+      "table.character": "角色",
+      "table.register": "語域",
       "table.checked": "核對",
       "table.previous": "上一頁",
       "table.next": "下一頁",
@@ -195,6 +275,17 @@
       "review.remaining": "尚待核對",
       "review.export": "匯出核對結果",
       "review.reset": "清除本機核對紀錄",
+      "detail.title": "詞條詳情",
+      "detail.open": "查看詳情",
+      "detail.close": "關閉詞條詳情",
+      "detail.why": "為何歸入此類",
+      "detail.source": "來源",
+      "detail.previous": "上一筆",
+      "detail.next": "下一筆",
+      "detail.copy": "複製詞條連結",
+      "detail.copied": "已複製詞條連結。",
+      "detail.charactersEmpty": "沒有明確角色名稱",
+      "detail.markersEmpty": "未偵測到",
     },
   };
 
@@ -227,6 +318,9 @@
     category: "all",
     checked: "all",
     realization: "all",
+    character: "all",
+    register: "all",
+    entry: null,
     top: 12,
     weight: 1,
     sort: "id",
@@ -246,6 +340,7 @@
     pinned: new Set(),
   };
   let toastTimer;
+  let entryTrigger = null;
 
   function t(key, values = {}) {
     const language = state.lang === "zh" ? "zh" : "en";
@@ -267,6 +362,14 @@
 
   function realizationLabel(realization) {
     return t(`realization.${realization}`);
+  }
+
+  function characterLabel(character) {
+    return t(`character.${character}`);
+  }
+
+  function registerLabel(register) {
+    return t(`register.${register}`);
   }
 
   function functionLabel(feature) {
@@ -321,9 +424,26 @@
     state.realization = REALIZATION_ORDER.includes(params.get("realization"))
       ? params.get("realization")
       : "all";
+    state.character = CHARACTER_ORDER.includes(params.get("character"))
+      ? params.get("character")
+      : "all";
+    state.register = REGISTER_ORDER.includes(params.get("register"))
+      ? params.get("register")
+      : "all";
+    state.entry = Number(params.get("entry")) || null;
     state.top = clamp(Number(params.get("top")) || 12, 6, 20);
     state.weight = clamp(Number(params.get("weight")) || 1, 1, 8);
-    state.sort = ["id", "source_text", "target_text", "key_term", "category", "realization", "human_checked"].includes(params.get("sort"))
+    state.sort = [
+      "id",
+      "source_text",
+      "target_text",
+      "key_term",
+      "category",
+      "realization",
+      "character_group",
+      "language_register",
+      "human_checked",
+    ].includes(params.get("sort"))
       ? params.get("sort")
       : "id";
     state.dir = params.get("dir") === "desc" ? "desc" : "asc";
@@ -337,6 +457,9 @@
     if (state.category !== "all") params.set("category", state.category);
     if (state.checked !== "all") params.set("checked", state.checked);
     if (state.realization !== "all") params.set("realization", state.realization);
+    if (state.character !== "all") params.set("character", state.character);
+    if (state.register !== "all") params.set("register", state.register);
+    if (state.entry) params.set("entry", String(state.entry));
     if (state.top !== DEFAULT_STATE.top) params.set("top", String(state.top));
     if (state.weight !== DEFAULT_STATE.weight) params.set("weight", String(state.weight));
     if (state.sort !== DEFAULT_STATE.sort) params.set("sort", state.sort);
@@ -390,6 +513,11 @@
       entry.category,
       entry.realization,
       entry.length_ratio,
+      entry.character_group,
+      entry.characters,
+      entry.language_register,
+      entry.cantonese_markers,
+      entry.written_chinese_markers,
     ].join(" ").toLocaleLowerCase();
     return haystack.includes(query.toLocaleLowerCase());
   }
@@ -402,6 +530,14 @@
       if (
         state.realization !== "all"
         && entry.realization !== state.realization
+      ) return false;
+      if (
+        state.character !== "all"
+        && entry.character_group !== state.character
+      ) return false;
+      if (
+        state.register !== "all"
+        && entry.language_register !== state.register
       ) return false;
       return true;
     });
@@ -469,12 +605,16 @@
     const category = document.querySelector("#category-filter");
     const checked = document.querySelector("#checked-filter");
     const realization = document.querySelector("#realization-filter");
+    const character = document.querySelector("#character-filter");
+    const register = document.querySelector("#register-filter");
     const top = document.querySelector("#network-top");
     const weight = document.querySelector("#network-weight");
     if (search && search.value !== state.q) search.value = state.q;
     if (category) category.value = state.category;
     if (checked) checked.value = state.checked;
     if (realization) realization.value = state.realization;
+    if (character) character.value = state.character;
+    if (register) register.value = state.register;
     if (top) top.value = String(state.top);
     if (weight) weight.value = String(state.weight);
     const topOutput = document.querySelector("#network-top-output");
@@ -959,6 +1099,256 @@
     stage.append(table);
   }
 
+  function renderCharacterChart(rows) {
+    const stage = document.querySelector("#character-stage");
+    if (!stage) return;
+    stage.replaceChildren();
+    const namedRows = rows.filter((entry) => entry.character_group !== "none");
+    if (!namedRows.length) {
+      const empty = document.createElement("p");
+      empty.className = "empty-state";
+      empty.textContent = t("toast.empty");
+      stage.append(empty);
+      return;
+    }
+
+    const categoryColors = {
+      condensation: "#1b4f87",
+      explicitation: "#bd1622",
+      transposition: "#c15a1d",
+      congruence: "#6b3551",
+    };
+    const groups = CHARACTER_ORDER
+      .filter((character) => character !== "none")
+      .map((character) => {
+        const entries = namedRows.filter(
+          (entry) => entry.character_group === character
+        );
+        return { character, entries, total: entries.length };
+      })
+      .filter((group) => group.total)
+      .sort((a, b) => b.total - a.total);
+    const maximum = Math.max(...groups.map((group) => group.total), 1);
+
+    const chart = document.createElement("div");
+    chart.className = "character-bars";
+    for (const group of groups) {
+      const row = document.createElement("div");
+      row.className = "character-row";
+      const label = document.createElement("button");
+      label.type = "button";
+      label.className = "character-name";
+      label.textContent = characterLabel(group.character);
+      label.addEventListener("click", () => {
+        state.character = group.character;
+        state.page = 1;
+        syncControls();
+        renderAll();
+      });
+
+      const track = document.createElement("div");
+      track.className = "character-track";
+      track.style.width = `${Math.max(18, (group.total / maximum) * 100)}%`;
+      for (const category of CATEGORY_ORDER) {
+        const count = group.entries.filter(
+          (entry) => entry.category === category
+        ).length;
+        if (!count) continue;
+        const segment = document.createElement("button");
+        segment.type = "button";
+        segment.className = "character-segment";
+        segment.style.flex = `${count} 1 0`;
+        segment.style.background = categoryColors[category];
+        segment.title = `${categoryLabel(category)}: ${count}`;
+        segment.setAttribute(
+          "aria-label",
+          `${characterLabel(group.character)}, ${categoryLabel(category)}: ${count}`
+        );
+        segment.addEventListener("click", () => {
+          state.character = group.character;
+          state.category = category;
+          state.page = 1;
+          syncControls();
+          renderAll();
+        });
+        track.append(segment);
+      }
+      const count = document.createElement("strong");
+      count.textContent = String(group.total);
+      row.append(label, track, count);
+      chart.append(row);
+    }
+    stage.append(chart);
+  }
+
+  function renderRegisterChart(rows) {
+    const stage = document.querySelector("#register-stage");
+    if (!stage) return;
+    stage.replaceChildren();
+    if (!rows.length) {
+      const empty = document.createElement("p");
+      empty.className = "empty-state";
+      empty.textContent = t("toast.empty");
+      stage.append(empty);
+      return;
+    }
+
+    const counts = new Map(
+      REGISTER_ORDER.map((register) => [
+        register,
+        rows.filter((entry) => entry.language_register === register).length,
+      ])
+    );
+    const maximum = Math.max(...counts.values(), 1);
+    const chart = document.createElement("div");
+    chart.className = "register-bars";
+    for (const register of REGISTER_ORDER) {
+      const count = counts.get(register) || 0;
+      const row = document.createElement("button");
+      row.type = "button";
+      row.className = `register-row ${register}`;
+      row.setAttribute(
+        "aria-label",
+        `${registerLabel(register)}: ${count}`
+      );
+      const label = document.createElement("span");
+      label.textContent = registerLabel(register);
+      const track = document.createElement("span");
+      track.className = "register-track";
+      const fill = document.createElement("span");
+      fill.className = "register-fill";
+      fill.style.width = `${(count / maximum) * 100}%`;
+      track.append(fill);
+      const number = document.createElement("strong");
+      number.textContent = String(count);
+      row.append(label, track, number);
+      row.addEventListener("click", () => {
+        state.register = register;
+        state.page = 1;
+        syncControls();
+        renderAll();
+      });
+      chart.append(row);
+    }
+    stage.append(chart);
+  }
+
+  function entryExplanation(entry) {
+    const ratio = Number(entry.length_ratio).toFixed(2);
+    if (entry.category === "condensation") {
+      return state.lang === "zh"
+        ? `標準化長度比為 ${ratio}，低於 0.70 的壓縮門檻。`
+        : `The normalized length ratio is ${ratio}, below the 0.70 condensation threshold.`;
+    }
+    if (entry.category === "explicitation") {
+      return state.lang === "zh"
+        ? `標準化長度比為 ${ratio}，高於 1.30 的明示門檻。`
+        : `The normalized length ratio is ${ratio}, above the 1.30 explicitation threshold.`;
+    }
+    if (entry.category === "transposition") {
+      return state.lang === "zh"
+        ? `標準化長度比為 ${ratio}，位於中間區間，而原文與譯文的言語行為不同。`
+        : `The ratio is ${ratio}, inside the middle band, and the source and target speech acts differ.`;
+    }
+    return state.lang === "zh"
+      ? `標準化長度比為 ${ratio}，位於中間區間，而原文與譯文的言語行為一致。`
+      : `The ratio is ${ratio}, inside the middle band, and the source and target speech acts agree.`;
+  }
+
+  function openEntry(entryId) {
+    const numericId = Number(entryId);
+    if (!Number.isFinite(numericId)) return;
+    if (document.activeElement instanceof HTMLElement) {
+      entryTrigger = document.activeElement;
+    }
+    state.entry = numericId;
+    renderEntryPanel();
+    writeStateToUrl();
+    const panel = document.querySelector("#entry-panel");
+    const close = document.querySelector("#entry-panel-close");
+    if (panel) panel.hidden = false;
+    if (close) close.focus();
+  }
+
+  function closeEntry() {
+    state.entry = null;
+    const panel = document.querySelector("#entry-panel");
+    const backdrop = document.querySelector("#entry-panel-backdrop");
+    if (panel) panel.hidden = true;
+    if (backdrop) backdrop.hidden = true;
+    entryTrigger?.focus();
+    entryTrigger = null;
+    writeStateToUrl();
+  }
+
+  function stepEntry(direction) {
+    const rows = sortRows(filteredRows.length ? filteredRows : corpus.entries);
+    const index = rows.findIndex((entry) => entry.id === state.entry);
+    if (index < 0) return;
+    const next = rows[index + direction];
+    if (!next) return;
+    state.entry = next.id;
+    renderEntryPanel();
+    writeStateToUrl();
+  }
+
+  function renderEntryPanel() {
+    const panel = document.querySelector("#entry-panel");
+    const backdrop = document.querySelector("#entry-panel-backdrop");
+    if (!panel || !backdrop) return;
+    const entry = corpus.entries.find((item) => item.id === state.entry);
+    if (!entry) {
+      panel.hidden = true;
+      backdrop.hidden = true;
+      return;
+    }
+
+    panel.hidden = false;
+    backdrop.hidden = false;
+    const text = (id, value) => {
+      const node = document.querySelector(id);
+      if (node) node.textContent = value;
+    };
+    text("#entry-panel-kicker", `Workbook row ${entry.id}`);
+    text("#entry-panel-help", t("detail.title"));
+    text("#entry-source-text", entry.source_text);
+    text("#entry-target-text", entry.target_text);
+    text("#entry-category", categoryLabel(entry.category));
+    text("#entry-function", functionLabel(entry.key_term));
+    text("#entry-length", `${entry.length_ratio.toFixed(2)} · ${realizationLabel(entry.realization)}`);
+    text("#entry-character", characterLabel(entry.character_group));
+    text("#entry-register", registerLabel(entry.language_register));
+    text("#entry-checked", t(entry.human_checked === "yes" ? "filter.yes" : "filter.no"));
+    text("#entry-reason", entryExplanation(entry));
+    text(
+      "#entry-markers",
+      [
+        entry.cantonese_markers,
+        entry.written_chinese_markers,
+      ].filter(Boolean).join(" · ") || t("detail.markersEmpty")
+    );
+    text("#entry-source", entry.source);
+
+    const categoryLink = document.querySelector("#entry-category-link");
+    if (categoryLink) categoryLink.href = `codebook.html#${entry.category}`;
+    const close = document.querySelector("#entry-panel-close");
+    if (close) close.setAttribute("aria-label", t("detail.close"));
+    const markersLabel = document.querySelector("#entry-markers-label");
+    if (markersLabel) {
+      markersLabel.textContent = state.lang === "zh"
+        ? "語域標記"
+        : "Register markers";
+    }
+    const sourceLabel = document.querySelector("#entry-source-label");
+    if (sourceLabel) sourceLabel.textContent = t("detail.source");
+    const previous = document.querySelector("#entry-previous");
+    const next = document.querySelector("#entry-next");
+    const rows = sortRows(filteredRows.length ? filteredRows : corpus.entries);
+    const index = rows.findIndex((item) => item.id === entry.id);
+    if (previous) previous.disabled = index <= 0;
+    if (next) next.disabled = index < 0 || index >= rows.length - 1;
+  }
+
   function createTextCell(text, className) {
     const cell = document.createElement("td");
     if (className) cell.className = className;
@@ -978,7 +1368,7 @@
     if (!pageRows.length) {
       const row = document.createElement("tr");
       const cell = document.createElement("td");
-      cell.colSpan = 7;
+      cell.colSpan = 9;
       cell.className = "empty-state";
       cell.textContent = t("toast.empty");
       row.append(cell);
@@ -987,7 +1377,17 @@
 
     for (const entry of pageRows) {
       const row = document.createElement("tr");
-      row.append(createTextCell(`Row ${entry.id}\nLength ${entry.length_ratio.toFixed(2)}`));
+      const idCell = document.createElement("td");
+      idCell.className = "entry-id-cell";
+      const idLabel = document.createElement("span");
+      idLabel.textContent = `Row ${entry.id}\nLength ${entry.length_ratio.toFixed(2)}`;
+      const details = document.createElement("button");
+      details.type = "button";
+      details.className = "entry-open";
+      details.textContent = t("detail.open");
+      details.addEventListener("click", () => openEntry(entry.id));
+      idCell.append(idLabel, details);
+      row.append(idCell);
       row.append(createTextCell(entry.source_text));
       row.append(createTextCell(entry.target_text));
       const termCell = document.createElement("td");
@@ -1014,6 +1414,32 @@
       length.addEventListener("click", () => selectTerm(entry.realization));
       lengthCell.append(length);
       row.append(lengthCell);
+      const characterCell = document.createElement("td");
+      const character = document.createElement("button");
+      character.type = "button";
+      character.className = "term-link";
+      character.textContent = characterLabel(entry.character_group);
+      character.addEventListener("click", () => {
+        state.character = entry.character_group;
+        state.page = 1;
+        syncControls();
+        renderAll();
+      });
+      characterCell.append(character);
+      row.append(characterCell);
+      const registerCell = document.createElement("td");
+      const register = document.createElement("button");
+      register.type = "button";
+      register.className = "term-link";
+      register.textContent = registerLabel(entry.language_register);
+      register.addEventListener("click", () => {
+        state.register = entry.language_register;
+        state.page = 1;
+        syncControls();
+        renderAll();
+      });
+      registerCell.append(register);
+      row.append(registerCell);
       const checkedCell = document.createElement("td");
       const checked = document.createElement("span");
       checked.className = `checked-pill ${entry.human_checked}`;
@@ -1049,26 +1475,52 @@
     renderNetwork(filteredRows);
     renderTreemap(filteredRows);
     renderHeatmap(filteredRows);
+    renderCharacterChart(filteredRows);
+    renderRegisterChart(filteredRows);
     renderTable(filteredRows);
+    renderEntryPanel();
     writeStateToUrl();
   }
 
   function renderReportSummary() {
     const categoryStages = [...document.querySelectorAll(".report-category-bars")];
     const realizationStages = [...document.querySelectorAll(".report-realization-bars")];
-    if (!categoryStages.length && !realizationStages.length) return;
+    const characterStages = [...document.querySelectorAll(".report-character-bars")];
+    const registerStages = [...document.querySelectorAll(".report-register-bars")];
+    if (
+      !categoryStages.length
+      && !realizationStages.length
+      && !characterStages.length
+      && !registerStages.length
+    ) return;
     const rows = entriesWithReviewStatus();
     const categoryCounts = new Map(CATEGORY_ORDER.map((category) => [category, 0]));
     const realizationCounts = new Map(REALIZATION_ORDER.map((item) => [item, 0]));
+    const characterCounts = new Map(CHARACTER_ORDER.map((item) => [item, 0]));
+    const registerCounts = new Map(REGISTER_ORDER.map((item) => [item, 0]));
     for (const entry of rows) {
       categoryCounts.set(entry.category, (categoryCounts.get(entry.category) || 0) + 1);
       realizationCounts.set(entry.realization, (realizationCounts.get(entry.realization) || 0) + 1);
+      characterCounts.set(
+        entry.character_group,
+        (characterCounts.get(entry.character_group) || 0) + 1
+      );
+      registerCounts.set(
+        entry.language_register,
+        (registerCounts.get(entry.language_register) || 0) + 1
+      );
     }
     categoryStages.forEach((stage) => {
       createBars(stage, categoryCounts, rows.length, categoryLabel);
     });
     realizationStages.forEach((stage) => {
       createBars(stage, realizationCounts, rows.length, realizationLabel);
+    });
+    characterStages.forEach((stage) => {
+      createBars(stage, characterCounts, rows.length, characterLabel);
+    });
+    registerStages.forEach((stage) => {
+      createBars(stage, registerCounts, rows.length, registerLabel);
     });
   }
 
@@ -1123,7 +1575,8 @@
       const id = document.createElement("span");
       id.textContent = (
         `ID ${entry.id} · ${functionLabel(entry.key_term)} · `
-        + `${categoryLabel(entry.category)} · ${realizationLabel(entry.realization)}`
+        + `${categoryLabel(entry.category)} · ${realizationLabel(entry.realization)} · `
+        + `${characterLabel(entry.character_group)} · ${registerLabel(entry.language_register)}`
       );
       const source = document.createElement("span");
       source.textContent = `Workbook row ${entry.id}`;
@@ -1236,6 +1689,11 @@
       "target_verb",
       "realization",
       "length_ratio",
+      "character_group",
+      "characters",
+      "language_register",
+      "cantonese_markers",
+      "written_chinese_markers",
       "genre",
       "corpus_version",
       "collection_date",
@@ -1250,7 +1708,7 @@
       "cantonese_han_count",
       "notes",
     ];
-    downloadCsv(fields, rows, "cue-shift-filtered-corpus.csv");
+    downloadCsv(fields, rows, "s-web-of-words-filtered-corpus.csv");
   }
 
   function downloadCsv(fields, rows, filename) {
@@ -1275,6 +1733,8 @@
     const category = document.querySelector("#category-filter");
     const checked = document.querySelector("#checked-filter");
     const realization = document.querySelector("#realization-filter");
+    const character = document.querySelector("#character-filter");
+    const register = document.querySelector("#register-filter");
     const top = document.querySelector("#network-top");
     const weight = document.querySelector("#network-weight");
     const clear = document.querySelector("#clear-search");
@@ -1302,6 +1762,16 @@
     });
     realization?.addEventListener("change", () => {
       state.realization = realization.value;
+      state.page = 1;
+      renderAll();
+    });
+    character?.addEventListener("change", () => {
+      state.character = character.value;
+      state.page = 1;
+      renderAll();
+    });
+    register?.addEventListener("change", () => {
+      state.register = register.value;
       state.page = 1;
       renderAll();
     });
@@ -1334,6 +1804,9 @@
         category: "all",
         checked: "all",
         realization: "all",
+        character: "all",
+        register: "all",
+        entry: null,
         top: 12,
         weight: 1,
         sort: "id",
@@ -1393,6 +1866,22 @@
         pinned: new Set(),
       };
       renderNetwork(filteredRows);
+    });
+
+    document.querySelector("#entry-panel-close")?.addEventListener("click", closeEntry);
+    document.querySelector("#entry-previous")?.addEventListener("click", () => stepEntry(-1));
+    document.querySelector("#entry-next")?.addEventListener("click", () => stepEntry(1));
+    document.querySelector("#entry-copy-link")?.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(location.href);
+        showToast(t("detail.copied"));
+      } catch {
+        showToast(location.href);
+      }
+    });
+    document.querySelector("#entry-panel-backdrop")?.addEventListener("click", closeEntry);
+    window.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && state.entry) closeEntry();
     });
   }
 
