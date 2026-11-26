@@ -1738,9 +1738,26 @@
     target?.prepend(box);
   }
 
+  function addSpiderDecorations() {
+    const positions = PAGE === "explore"
+      ? ["spider-one", "spider-two", "spider-three"]
+      : ["spider-three"];
+    for (const className of positions) {
+      const spider = document.createElement("div");
+      spider.className = `spider-decoration ${className}`;
+      spider.setAttribute("aria-hidden", "true");
+      const image = document.createElement("img");
+      image.src = "assets/spider.svg";
+      image.alt = "";
+      spider.append(image);
+      document.body.append(spider);
+    }
+  }
+
   async function init() {
     readStateFromUrl();
     applyLanguage();
+    addSpiderDecorations();
     bindLanguageSwitch();
     try {
       await loadCorpus();

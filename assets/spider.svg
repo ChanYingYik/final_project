@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 110" role="img" aria-label="Spider silhouette">
+  <g fill="none" stroke="#151923" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M51 45 28 29 15 7M52 53 25 48 5 34M53 61 27 68 11 87M57 68 36 84 28 105" stroke-width="5"/>
+    <path d="m69 45 23-16L105 7M68 53l27-5 20-14M67 61l26 7 16 19M63 68l21 16 8 21" stroke-width="5"/>
+  </g>
+  <ellipse cx="60" cy="66" rx="14" ry="22" fill="#171c27"/>
+  <circle cx="60" cy="39" r="12" fill="#171c27"/>
+  <path d="M56 63c3 5 5 8 4 13 5-3 8-9 7-15 4 5 7 11 6 20-5-2-9 0-13 2-4-2-8-4-13-2-1-9 2-15 6-20-1 6 2 12 7 15-1-5 1-8 4-13Z" fill="#bd1622"/>
+</svg>
