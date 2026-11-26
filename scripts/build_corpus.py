@@ -31,49 +31,7 @@ CATEGORY_ORDER = (
 )
 FUNCTION_ORDER = ("statement", "question", "command", "reaction")
 LENGTH_ORDER = ("compact", "balanced", "expanded")
-CHARACTER_ORDER = (
-    "peter_spider",
-    "scorpion",
-    "ned",
-    "mj",
-    "max",
-    "metzger",
-    "frank",
-    "cindy",
-    "leshy",
-    "other",
-    "multiple",
-    "none",
-)
-REGISTER_ORDER = ("cantonese_leaning", "mixed_register", "written_chinese")
-
-CHARACTER_PATTERNS = {
-    "peter_spider": (
-        r"\bpeter\b",
-        r"\bparker\b",
-        r"\bspider[- ]?man\b",
-        r"\bspidey\b",
-        r"彼得",
-        r"柏加",
-        r"蜘蛛俠",
-    ),
-    "scorpion": (r"\bscorpions?\b", r"蠍子"),
-    "ned": (r"\bned\b", r"尼特"),
-    "mj": (r"\bmj\b",),
-    "max": (r"\bv-max\b", r"\bmax\b", r"麥斯"),
-    "metzger": (r"\bmetzger\b", r"\bdirector\b", r"梅茨格", r"局長"),
-    "frank": (r"\bfrank\b", r"法蘭克"),
-    "cindy": (r"\bcindy\b", r"仙迪"),
-    "leshy": (r"\bleshy\b", r"萊希"),
-    "other": (
-        r"\bmanfredi\b",
-        r"\bfoswell\b",
-        r"\blonnie\b",
-        r"\bwiley\b",
-        r"\bjim\b",
-        r"\bnate dogg\b",
-    ),
-}
+REGISTER_ORDER = ("cantonese_colloquial", "mixed_register", "written_chinese")
 
 CANTONESE_MARKERS = (
     "唔",
@@ -182,29 +140,15 @@ def classify(source_text: str, target_text: str, ratio: float) -> tuple[str, str
     return "congruence", function
 
 
-def character_groups(source_text: str, target_text: str) -> tuple[list[str], str]:
-    text = f"{source_text} {target_text}"
-    groups = [
-        group
-        for group, patterns in CHARACTER_PATTERNS.items()
-        if any(re.search(pattern, text, re.IGNORECASE) for pattern in patterns)
-    ]
-    if not groups:
-        return [], "none"
-    if len(groups) > 1:
-        return groups, "multiple"
-    return groups, groups[0]
-
-
 def language_register(target_text: str) -> tuple[str, list[str], list[str]]:
     cantonese = [marker for marker in CANTONESE_MARKERS if marker in target_text]
     written = [marker for marker in WRITTEN_CHINESE_MARKERS if marker in target_text]
     if len(cantonese) >= 2:
-        register = "cantonese_leaning"
+        register = "cantonese_colloquial"
     elif cantonese and written:
         register = "mixed_register"
     elif cantonese:
-        register = "cantonese_leaning"
+        register = "cantonese_colloquial"
     else:
         register = "written_chinese"
     return register, cantonese, written
@@ -269,7 +213,6 @@ def make_corpus() -> dict:
         han = chinese_han(target_text)
         ratio = han / max(words * 1.45, 1)
         category, function = classify(source_text, target_text, ratio)
-        characters, character_group = character_groups(source_text, target_text)
         register, cantonese_markers, written_markers = language_register(target_text)
         entries.append(
             {
@@ -288,8 +231,6 @@ def make_corpus() -> dict:
                 "key_term": function,
                 "target_verb": category,
                 "realization": length_band(ratio),
-                "character_group": character_group,
-                "characters": "; ".join(characters),
                 "language_register": register,
                 "cantonese_markers": "; ".join(cantonese_markers),
                 "written_chinese_markers": "; ".join(written_markers),
@@ -314,13 +255,9 @@ def make_corpus() -> dict:
     category_counts = Counter(entry["category"] for entry in entries)
     function_counts = Counter(entry["key_term"] for entry in entries)
     length_counts = Counter(entry["realization"] for entry in entries)
-    character_counts = Counter(entry["character_group"] for entry in entries)
     register_counts = Counter(entry["language_register"] for entry in entries)
     function_by_category = Counter(
         (entry["category"], entry["key_term"]) for entry in entries
-    )
-    character_by_category = Counter(
-        (entry["character_group"], entry["category"]) for entry in entries
     )
     register_by_category = Counter(
         (entry["language_register"], entry["category"]) for entry in entries
@@ -344,7 +281,6 @@ def make_corpus() -> dict:
             "category_counts": dict(category_counts),
             "function_counts": dict(function_counts),
             "length_counts": dict(length_counts),
-            "character_counts": dict(character_counts),
             "register_counts": dict(register_counts),
             "function_by_category": {
                 category: {
@@ -352,13 +288,6 @@ def make_corpus() -> dict:
                     for function in FUNCTION_ORDER
                 }
                 for category in CATEGORY_ORDER
-            },
-            "character_by_category": {
-                character: {
-                    category: character_by_category[(character, category)]
-                    for category in CATEGORY_ORDER
-                }
-                for character in CHARACTER_ORDER
             },
             "register_by_category": {
                 register: {
@@ -384,15 +313,10 @@ def make_corpus() -> dict:
                 "Seven incomplete pairs and ten duplicate pairs had already been "
                 "removed before final coding."
             ),
-            "character_method": (
-                "Character groups record names explicitly present in the source "
-                "or target cue. They describe mentions, not the speaker, because "
-                "the supplied workbook does not contain speaker labels."
-            ),
             "register_method": (
                 "A transparent lexicon flags Cantonese-specific forms such as "
                 "唔, 咩, 冇 and 係, and written-Chinese forms such as 的, 是, 這 "
-                "and 不. Two or more Cantonese markers are Cantonese-leaning; one "
+                "and 不. Two or more Cantonese markers are Cantonese colloquial; one "
                 "Cantonese marker with a written marker is mixed; otherwise the "
                 "cue is written-Chinese dominant. This is a spelling and phrase "
                 "heuristic, not an audio judgment."
@@ -422,8 +346,6 @@ def write_csv(entries: list[dict]) -> None:
         "unit",
         "key_term",
         "realization",
-        "character_group",
-        "characters",
         "language_register",
         "cantonese_markers",
         "written_chinese_markers",
