@@ -200,24 +200,24 @@
 
   const PAGE_TITLES = {
     explore: {
-      en: "Cue Shift | Spider-Man: Brand New Day Subtitle Explorer",
-      zh: "字幕換聲｜《蜘蛛俠：全新的一天》字幕探索器",
+      en: "S-Web of Words | Spider-Man: Brand New Day Subtitle Explorer",
+      zh: "S-Web of Words｜《蜘蛛俠：全新的一天》字幕探索器",
     },
     report: {
-      en: "Learning Report | Spider-Man: Brand New Day",
-      zh: "學習報告｜《蜘蛛俠：全新的一天》",
+      en: "Learning Report | S-Web of Words",
+      zh: "學習報告｜S-Web of Words",
     },
     codebook: {
-      en: "Codebook | Spider-Man: Brand New Day",
-      zh: "編碼簿｜《蜘蛛俠：全新的一天》",
+      en: "Codebook | S-Web of Words",
+      zh: "編碼簿｜S-Web of Words",
     },
     review: {
-      en: "Quality Check | Spider-Man: Brand New Day",
-      zh: "品質檢查｜《蜘蛛俠：全新的一天》",
+      en: "Quality Check | S-Web of Words",
+      zh: "品質檢查｜S-Web of Words",
     },
     about: {
-      en: "AI Use & Data Notes | Spider-Man: Brand New Day",
-      zh: "AI 使用與資料說明｜《蜘蛛俠：全新的一天》",
+      en: "AI Use & Data Notes | S-Web of Words",
+      zh: "AI 使用與資料說明｜S-Web of Words",
     },
   };
 
