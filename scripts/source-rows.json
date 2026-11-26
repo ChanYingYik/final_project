@@ -1,0 +1,2597 @@
+[
+  {
+    "row": 1,
+    "source_text": "Hi, my name is Peter Parker.",
+    "target_text": "嗨，我叫彼得柏加"
+  },
+  {
+    "row": 2,
+    "source_text": "You don't remember me, but I have something",
+    "target_text": "你不記得我 但我有件事要話你知"
+  },
+  {
+    "row": 3,
+    "source_text": "to tell you that sounds crazy.",
+    "target_text": "聽落會好癲"
+  },
+  {
+    "row": 4,
+    "source_text": "But it's true.",
+    "target_text": "但全是事實"
+  },
+  {
+    "row": 5,
+    "source_text": "And I know you'll believe me because you can tell",
+    "target_text": "我知你會信我"
+  },
+  {
+    "row": 6,
+    "source_text": "when I'm lying.",
+    "target_text": "因為你好擅長分辨 我有冇講大話"
+  },
+  {
+    "row": 7,
+    "source_text": "EV, can you check the targeting matrix calibration?",
+    "target_text": "E.V.，檢查瞄準器校準未"
+  },
+  {
+    "row": 8,
+    "source_text": "It doesn't look right to me.",
+    "target_text": "我覺得未對準"
+  },
+  {
+    "row": 9,
+    "source_text": "Checking targeting calibration.",
+    "target_text": "正在檢查瞄準器校準"
+  },
+  {
+    "row": 10,
+    "source_text": "EV, pause.",
+    "target_text": "E.V.，休息一下"
+  },
+  {
+    "row": 11,
+    "source_text": "Standing by.",
+    "target_text": "待命中"
+  },
+  {
+    "row": 12,
+    "source_text": "We knew each other.",
+    "target_text": "我們以前認識"
+  },
+  {
+    "row": 13,
+    "source_text": "We were together.",
+    "target_text": "我們曾是一對"
+  },
+  {
+    "row": 14,
+    "source_text": "But something bad was going to happen.",
+    "target_text": "後來有壞事會發生"
+  },
+  {
+    "row": 15,
+    "source_text": "The only way to stop it was to make everyone forget me.",
+    "target_text": "而唯一的阻止方法 就是讓所有人都忘記我"
+  },
+  {
+    "row": 16,
+    "source_text": "First and second, let's go!",
+    "target_text": "第一日，掂呀！"
+  },
+  {
+    "row": 17,
+    "source_text": "Oh my God, we made it!",
+    "target_text": "天啊！我們到了！"
+  },
+  {
+    "row": 18,
+    "source_text": "We did it!",
+    "target_text": "我們做到了！"
+  },
+  {
+    "row": 19,
+    "source_text": "MJ, get over here.",
+    "target_text": "MJ，過來"
+  },
+  {
+    "row": 20,
+    "source_text": "You too.",
+    "target_text": "包括你"
+  },
+  {
+    "row": 21,
+    "source_text": "Pretend you're not the happiest guy in the world.",
+    "target_text": "扮你依家唔係成世女最開心一刻"
+  },
+  {
+    "row": 22,
+    "source_text": "I can't.",
+    "target_text": "扮唔到"
+  },
+  {
+    "row": 23,
+    "source_text": "Because I'm not just Peter Parker.",
+    "target_text": "因為我不只是彼得柏加"
+  },
+  {
+    "row": 24,
+    "source_text": "I'm Spider-Man.",
+    "target_text": "我是蜘蛛俠"
+  },
+  {
+    "row": 25,
+    "source_text": "I'm really trying to understand Boston culture.",
+    "target_text": "我開始明白波士頓的文化"
+  },
+  {
+    "row": 26,
+    "source_text": "It's so different.",
+    "target_text": "真的非常不同"
+  },
+  {
+    "row": 27,
+    "source_text": "And sometimes Spider-Man has to make tough choices,",
+    "target_text": "而有時候蜘蛛俠必須作出艱難決定"
+  },
+  {
+    "row": 28,
+    "source_text": "even if it breaks Peter Parker's heart.",
+    "target_text": "即使那會令{彼得柏加}心碎"
+  },
+  {
+    "row": 29,
+    "source_text": "And maybe that's my responsibility.",
+    "target_text": "這可能就是我的責任"
+  },
+  {
+    "row": 30,
+    "source_text": "To live alone with the truth.",
+    "target_text": "獨自承受真相"
+  },
+  {
+    "row": 31,
+    "source_text": "But the truth is, MJ, I love you.",
+    "target_text": "但真相是…MJ，我愛你"
+  },
+  {
+    "row": 32,
+    "source_text": "And I hope that deep down, some part",
+    "target_text": "希望你內心深處…"
+  },
+  {
+    "row": 33,
+    "source_text": "of you remembers that you love me too.",
+    "target_text": "有部分記得你也愛我"
+  },
+  {
+    "row": 34,
+    "source_text": "Until then, I'll keep being Spider-Man.",
+    "target_text": "但在那之前，我只好繼續做蜘蛛俠"
+  },
+  {
+    "row": 35,
+    "source_text": "Attack!",
+    "target_text": "喂！捉住他！"
+  },
+  {
+    "row": 36,
+    "source_text": "Members of the Manfredi crime family",
+    "target_text": "曼弗雷迪犯罪集團的成員…"
+  },
+  {
+    "row": 37,
+    "source_text": "were apprehended yesterday by Spider-Man.",
+    "target_text": "昨日已被蜘蛛俠逮捕"
+  },
+  {
+    "row": 38,
+    "source_text": "We're on the same floor.",
+    "target_text": "嗨，我們住同一層"
+  },
+  {
+    "row": 39,
+    "source_text": "Nice!",
+    "target_text": "正"
+  },
+  {
+    "row": 40,
+    "source_text": "Does nobody ever come up here?",
+    "target_text": "會有人來這裏嗎？"
+  },
+  {
+    "row": 41,
+    "source_text": "Only if they like asbestos.",
+    "target_text": "除非他們喜歡石棉"
+  },
+  {
+    "row": 42,
+    "source_text": "We just use it as a storage space.",
+    "target_text": "我們一直把這裏當倉庫用"
+  },
+  {
+    "row": 43,
+    "source_text": "Perfect.",
+    "target_text": "啱晒我"
+  },
+  {
+    "row": 44,
+    "source_text": "Hey everyone.",
+    "target_text": "嗨，各位！"
+  },
+  {
+    "row": 45,
+    "source_text": "Sophomore year and I'm back!",
+    "target_text": "大二的{尼特}回來了"
+  },
+  {
+    "row": 46,
+    "source_text": "Wiser, smarter, cooler!",
+    "target_text": "更成熟、更睿智、更有型"
+  },
+  {
+    "row": 47,
+    "source_text": "Let's go!",
+    "target_text": "掂呀！"
+  },
+  {
+    "row": 48,
+    "source_text": "What?",
+    "target_text": ""
+  },
+  {
+    "row": 49,
+    "source_text": "What happened to your face?",
+    "target_text": "你塊面搞咩？"
+  },
+  {
+    "row": 50,
+    "source_text": "How does it look?",
+    "target_text": "你覺得點？"
+  },
+  {
+    "row": 51,
+    "source_text": "You look like an assistant coach.",
+    "target_text": "你似個副教練"
+  },
+  {
+    "row": 52,
+    "source_text": "So that's how we're playing it, Scorpion?",
+    "target_text": "蠍子人，你肯定要咁？"
+  },
+  {
+    "row": 53,
+    "source_text": "Miss me, Spidey?",
+    "target_text": "掛住我嘛，蜘蛛仔？"
+  },
+  {
+    "row": 54,
+    "source_text": "If I let you go, how long do you think",
+    "target_text": "如果我掟你落去…"
+  },
+  {
+    "row": 55,
+    "source_text": "it'll take you to hit the ground?",
+    "target_text": "你估你要幾耐先掂地？"
+  },
+  {
+    "row": 56,
+    "source_text": "No idea.",
+    "target_text": "唔知喎"
+  },
+  {
+    "row": 57,
+    "source_text": "What do you think?",
+    "target_text": "你話我知"
+  },
+  {
+    "row": 58,
+    "source_text": "Let's end this nicely, alright?",
+    "target_text": "不如砰砰聲解決？"
+  },
+  {
+    "row": 59,
+    "source_text": "Lonnie.",
+    "target_text": "喂！朗尼！"
+  },
+  {
+    "row": 60,
+    "source_text": "What's up?",
+    "target_text": "搞咩呀？"
+  },
+  {
+    "row": 61,
+    "source_text": "DeWolfe!",
+    "target_text": "德沃夫"
+  },
+  {
+    "row": 62,
+    "source_text": "All the evidence you need is in the trunk of his car.",
+    "target_text": "你要的證據 都在他的車尾箱裏"
+  },
+  {
+    "row": 63,
+    "source_text": "Trying to steal my job, Spider-Man?",
+    "target_text": "你想搶我飯碗嗎，蜘蛛俠？"
+  },
+  {
+    "row": 64,
+    "source_text": "You're the professionals.",
+    "target_text": "你們先至專業"
+  },
+  {
+    "row": 65,
+    "source_text": "I'm just a volunteer.",
+    "target_text": "我只是義工"
+  },
+  {
+    "row": 66,
+    "source_text": "A brand new New York City.",
+    "target_text": "這是全新的紐約"
+  },
+  {
+    "row": 67,
+    "source_text": "Thanks to Spider-Man,",
+    "target_text": "多得蜘蛛俠"
+  },
+  {
+    "row": 68,
+    "source_text": "crime has dropped to an all-time low.",
+    "target_text": "罪案率降至歷史新低"
+  },
+  {
+    "row": 69,
+    "source_text": "Police and Damage Control attribute",
+    "target_text": "警方與災害控制部將大部分功勞…"
+  },
+  {
+    "row": 70,
+    "source_text": "much of that success to the masked hero.",
+    "target_text": "歸於這位蒙面英雄"
+  },
+  {
+    "row": 71,
+    "source_text": "Initiating HUD check.",
+    "target_text": "啟動平視器測試"
+  },
+  {
+    "row": 72,
+    "source_text": "Armed robbery at Civic Union Bank.",
+    "target_text": "市民聯合銀行發生持械行劫"
+  },
+  {
+    "row": 73,
+    "source_text": "In six months, he's taken down every major crime boss",
+    "target_text": "過去六個月，他已擊潰…"
+  },
+  {
+    "row": 74,
+    "source_text": "in all five boroughs",
+    "target_text": "五大區的所有主要犯罪頭目"
+  },
+  {
+    "row": 75,
+    "source_text": "including the Hand ninjas.",
+    "target_text": "包括擁有超能力的忍者組織手合會"
+  },
+  {
+    "row": 76,
+    "source_text": "He's New York's pride, the hero adults",
+    "target_text": "他是紐約市的驕傲"
+  },
+  {
+    "row": 77,
+    "source_text": "count on and every kid wants to be.",
+    "target_text": "是每個成年人都仰賴 每個孩子都想成為的英雄"
+  },
+  {
+    "row": 78,
+    "source_text": "Last semester at MIT.",
+    "target_text": "最後一個{麻省理工}學期"
+  },
+  {
+    "row": 79,
+    "source_text": "Oh my God, we graduate in a month!",
+    "target_text": "天啊，我們一個月後就畢業"
+  },
+  {
+    "row": 80,
+    "source_text": "We have so many memories.",
+    "target_text": "我們創造了太多回憶"
+  },
+  {
+    "row": 81,
+    "source_text": "Where do I even start?",
+    "target_text": "邊度講起好？"
+  },
+  {
+    "row": 82,
+    "source_text": "The midnight swim in the river,",
+    "target_text": "和{占}與{威利}在{查爾斯河}游夜水"
+  },
+  {
+    "row": 83,
+    "source_text": "Charles with Jim and Wiley.",
+    "target_text": ""
+  },
+  {
+    "row": 84,
+    "source_text": "The epic food fight in the rec room.",
+    "target_text": "香蕉酒廊那場出了名的食物大戰"
+  },
+  {
+    "row": 85,
+    "source_text": "The all-nighters with MJ and Nate Dogg.",
+    "target_text": "和 MJ 與內特道格 在 5 號研討室捱通宵"
+  },
+  {
+    "row": 86,
+    "source_text": "Feels like just yesterday I was sitting on the rooftop",
+    "target_text": "感覺昨天仍和 MJ 坐在天台"
+  },
+  {
+    "row": 87,
+    "source_text": "with MJ dreaming of coming here,",
+    "target_text": ""
+  },
+  {
+    "row": 88,
+    "source_text": "and I still can't believe we made it.",
+    "target_text": "夢想一起來這裏 我仍不敢相信真的成真"
+  },
+  {
+    "row": 89,
+    "source_text": "I'm so grateful for all the friends I made.",
+    "target_text": "我非常感激 我識到的所有朋友"
+  },
+  {
+    "row": 90,
+    "source_text": "I couldn't have imagined going through",
+    "target_text": "我無法想像和其他人經歷這一切"
+  },
+  {
+    "row": 91,
+    "source_text": "all this with anyone else.",
+    "target_text": ""
+  },
+  {
+    "row": 92,
+    "source_text": "Ned, who do you think is watching this?",
+    "target_text": "尼特，你覺得有邊個會睇？"
+  },
+  {
+    "row": 93,
+    "source_text": "I don't know, but maybe someone is.",
+    "target_text": "'-唔知呀，某個人啩？ -好吧"
+  },
+  {
+    "row": 94,
+    "source_text": "Goodbye, someone!",
+    "target_text": "拜拜，某人"
+  },
+  {
+    "row": 95,
+    "source_text": "What?",
+    "target_text": "-吓？唔好！"
+  },
+  {
+    "row": 96,
+    "source_text": "The end!",
+    "target_text": "拜拜，拍完喇"
+  },
+  {
+    "row": 97,
+    "source_text": "No!",
+    "target_text": ""
+  },
+  {
+    "row": 98,
+    "source_text": "We're talking downtown Brooklyn, broad day.",
+    "target_text": "我們說的是光天化日之下 {布魯克林}市中心"
+  },
+  {
+    "row": 99,
+    "source_text": "A move like that... You know Foswell",
+    "target_text": "那樣高調作案"
+  },
+  {
+    "row": 100,
+    "source_text": "has his hand in it.",
+    "target_text": "肯定{法斯韋}有份"
+  },
+  {
+    "row": 101,
+    "source_text": "I know, but do you have proof?",
+    "target_text": "我明，但你能證明嗎？"
+  },
+  {
+    "row": 102,
+    "source_text": "I'm tracing his accounts and",
+    "target_text": "可以，我在查他的財務記錄"
+  },
+  {
+    "row": 103,
+    "source_text": "watching his crew every night.",
+    "target_text": "而且每晚都跟蹤他的手下"
+  },
+  {
+    "row": 104,
+    "source_text": "Is that all you do besides work?",
+    "target_text": "你除了工作還做任何事嗎？"
+  },
+  {
+    "row": 105,
+    "source_text": "You know, when you do what you",
+    "target_text": "都係嗰句「做熱愛的事」"
+  },
+  {
+    "row": 106,
+    "source_text": "love, you never work a day in your life.",
+    "target_text": "「就一世都不算在工作」"
+  },
+  {
+    "row": 107,
+    "source_text": "That's it.",
+    "target_text": ""
+  },
+  {
+    "row": 108,
+    "source_text": "Mom, where's my tablet?",
+    "target_text": "媽，我部計數機呢？"
+  },
+  {
+    "row": 109,
+    "source_text": "I don't know.",
+    "target_text": "不知道"
+  },
+  {
+    "row": 110,
+    "source_text": "Trust me, alright?",
+    "target_text": "信我，好嗎？"
+  },
+  {
+    "row": 111,
+    "source_text": "Being married to the job",
+    "target_text": "和工作結婚"
+  },
+  {
+    "row": 112,
+    "source_text": "isn't going to get you anywhere.",
+    "target_text": "從來不會有好下場"
+  },
+  {
+    "row": 113,
+    "source_text": "Don't worry about that.",
+    "target_text": "別擔心"
+  },
+  {
+    "row": 114,
+    "source_text": "I'll be fine.",
+    "target_text": "我會沒事的"
+  },
+  {
+    "row": 115,
+    "source_text": "Yeah?",
+    "target_text": "是嗎？"
+  },
+  {
+    "row": 116,
+    "source_text": "But you're still getting headaches, aren't you?",
+    "target_text": "但你還有頭痛吧？"
+  },
+  {
+    "row": 117,
+    "source_text": "Yeah, but I'll be fine.",
+    "target_text": "有，但我會沒事的"
+  },
+  {
+    "row": 118,
+    "source_text": "I don't know, man.",
+    "target_text": "未必，老兄"
+  },
+  {
+    "row": 119,
+    "source_text": "I think your body is trying to tell you something.",
+    "target_text": "我覺得你身體想給你訊號"
+  },
+  {
+    "row": 120,
+    "source_text": "Like you need to take that suit off once in a while.",
+    "target_text": "例如你要偶爾除低戰衣"
+  },
+  {
+    "row": 121,
+    "source_text": "Mom, do you know where my tablet is?",
+    "target_text": "媽，我部計數機呢？"
+  },
+  {
+    "row": 122,
+    "source_text": "No, honey.",
+    "target_text": "我不知道，寶貝"
+  },
+  {
+    "row": 123,
+    "source_text": "What you need is some real human contact.",
+    "target_text": "你需要真正的人際連繫"
+  },
+  {
+    "row": 124,
+    "source_text": "What?",
+    "target_text": ""
+  },
+  {
+    "row": 125,
+    "source_text": "We're not having contact right now?",
+    "target_text": "我們現在不算連繫？"
+  },
+  {
+    "row": 126,
+    "source_text": "No, man.",
+    "target_text": "不"
+  },
+  {
+    "row": 127,
+    "source_text": "I don't know your name, your face, nothing about you.",
+    "target_text": "我不知道你個名 你個樣，或任何一切"
+  },
+  {
+    "row": 128,
+    "source_text": "I don't think you've ever asked me about my life.",
+    "target_text": "你亦無問過我的生活"
+  },
+  {
+    "row": 129,
+    "source_text": "Of course I have!",
+    "target_text": "我當然問過"
+  },
+  {
+    "row": 130,
+    "source_text": "Okay, what are my kids' names?",
+    "target_text": "好吧…我仔女叫咩名？"
+  },
+  {
+    "row": 131,
+    "source_text": "Your son is named Papi.",
+    "target_text": "首先，你個仔叫「寶貝」"
+  },
+  {
+    "row": 132,
+    "source_text": "Is that Spider-Man?",
+    "target_text": "是{蜘蛛俠}嗎？"
+  },
+  {
+    "row": 133,
+    "source_text": "I can't tell you, honey.",
+    "target_text": "唔講得你知，寶貝"
+  },
+  {
+    "row": 134,
+    "source_text": "Then it's Spider-Man!",
+    "target_text": "即係{蜘蛛俠}啦"
+  },
+  {
+    "row": 135,
+    "source_text": "Oh my God!",
+    "target_text": "天啊"
+  },
+  {
+    "row": 136,
+    "source_text": "A stolen tank is heading south on 34th Street.",
+    "target_text": "坦克被騎劫，南行駛經{第34街}"
+  },
+  {
+    "row": 137,
+    "source_text": "All available units respond.",
+    "target_text": "所有待命單位回應"
+  },
+  {
+    "row": 138,
+    "source_text": "Hear that?",
+    "target_text": "嘿，你收到嗎？"
+  },
+  {
+    "row": 139,
+    "source_text": "Work, lucky you.",
+    "target_text": "又要開工，你真幸運"
+  },
+  {
+    "row": 140,
+    "source_text": "I'll see you there.",
+    "target_text": "好，現場見"
+  },
+  {
+    "row": 141,
+    "source_text": "Sorry, I gotta go.",
+    "target_text": "抱歉，我要走先"
+  },
+  {
+    "row": 142,
+    "source_text": "Gotcha, Spidey!",
+    "target_text": "我撐你，{蜘蛛仔}！"
+  },
+  {
+    "row": 143,
+    "source_text": "No, I don't need you.",
+    "target_text": "不，我不需要你…"
+  },
+  {
+    "row": 144,
+    "source_text": "You alright, kid?",
+    "target_text": "喂！小心！"
+  },
+  {
+    "row": 145,
+    "source_text": "Yeah, you're good.",
+    "target_text": "細路，冇事嘛？"
+  },
+  {
+    "row": 146,
+    "source_text": "See ya!",
+    "target_text": "你冇事，下次見"
+  },
+  {
+    "row": 147,
+    "source_text": "You can't tell, but this very street",
+    "target_text": "只睇街景未必知…"
+  },
+  {
+    "row": 148,
+    "source_text": "was completely destroyed in the Battle of New Orleans.",
+    "target_text": "但這條街曾在{紐約之戰}中 被完全摧毀"
+  },
+  {
+    "row": 149,
+    "source_text": "Come on, come on!",
+    "target_text": "停…停啊…"
+  },
+  {
+    "row": 150,
+    "source_text": "What the...",
+    "target_text": "嘿"
+  },
+  {
+    "row": 151,
+    "source_text": "What happened, Frank?",
+    "target_text": "有冇搞錯，{法蘭克}？"
+  },
+  {
+    "row": 152,
+    "source_text": "You just hit me!",
+    "target_text": "你用貨車撞我！"
+  },
+  {
+    "row": 153,
+    "source_text": "Stop whining.",
+    "target_text": "少哭哭啼啼"
+  },
+  {
+    "row": 154,
+    "source_text": "We're not doing this again, Frank.",
+    "target_text": "別又和上次一樣，{法蘭克}"
+  },
+  {
+    "row": 155,
+    "source_text": "You're right, we're not.",
+    "target_text": "講得啱，我們不會"
+  },
+  {
+    "row": 156,
+    "source_text": "This time, you're leaving me alone.",
+    "target_text": "今次你咪阻頭阻勢"
+  },
+  {
+    "row": 157,
+    "source_text": "Instead of saving your hide, you mean?",
+    "target_text": "你指不用去救你？"
+  },
+  {
+    "row": 158,
+    "source_text": "Are you gonna start with the Staten Island thing again?",
+    "target_text": "你又提{史丹頓島}單嘢？"
+  },
+  {
+    "row": 159,
+    "source_text": "You said it, not me.",
+    "target_text": "你提的，不是我"
+  },
+  {
+    "row": 160,
+    "source_text": "You can't just shoot at every situation.",
+    "target_text": "你不能凡事靠開槍解決"
+  },
+  {
+    "row": 161,
+    "source_text": "Innocent people could get hurt.",
+    "target_text": "無辜的人會受傷"
+  },
+  {
+    "row": 162,
+    "source_text": "What do you think is behind that tank, you idiot?",
+    "target_text": "邊個會擋在槍前，死蠢？"
+  },
+  {
+    "row": 163,
+    "source_text": "Shoot yourself.",
+    "target_text": "隨便你"
+  },
+  {
+    "row": 164,
+    "source_text": "Idiot.",
+    "target_text": "賤精"
+  },
+  {
+    "row": 165,
+    "source_text": "What a jerk!",
+    "target_text": "你條友"
+  },
+  {
+    "row": 166,
+    "source_text": "I'm gonna kill that kid.",
+    "target_text": "我要殺個死仔"
+  },
+  {
+    "row": 167,
+    "source_text": "DeWolfe, are you gonna stop him or not?",
+    "target_text": "'-{迪沃夫}？ -你到底要不要截停它？"
+  },
+  {
+    "row": 168,
+    "source_text": "He's heading towards the Damage",
+    "target_text": "它正直衝"
+  },
+  {
+    "row": 169,
+    "source_text": "Control Detention Center.",
+    "target_text": "{災控部拘留中心}"
+  },
+  {
+    "row": 170,
+    "source_text": "I'm trying.",
+    "target_text": "我已在努力"
+  },
+  {
+    "row": 171,
+    "source_text": "Try harder, we've got some",
+    "target_text": "再努力少少"
+  },
+  {
+    "row": 172,
+    "source_text": "very dangerous people in there.",
+    "target_text": "入面關了很多大惡人"
+  },
+  {
+    "row": 173,
+    "source_text": "Who do you think put them there?",
+    "target_text": "你以為是誰關進去的？"
+  },
+  {
+    "row": 174,
+    "source_text": "Come on, Scorpion.",
+    "target_text": "走吧，{蠍子人}"
+  },
+  {
+    "row": 175,
+    "source_text": "Moving day.",
+    "target_text": "今日要搬家"
+  },
+  {
+    "row": 176,
+    "source_text": "He's",
+    "target_text": "所有人撤離！"
+  },
+  {
+    "row": 177,
+    "source_text": "armed and extremely dangerous.",
+    "target_text": "這傢伙有武裝且危險"
+  },
+  {
+    "row": 178,
+    "source_text": "Step out of the vehicle, ma'am.",
+    "target_text": "立即出來，女士"
+  },
+  {
+    "row": 179,
+    "source_text": "That's exactly what I was thinking.",
+    "target_text": "正有此意"
+  },
+  {
+    "row": 180,
+    "source_text": "Spider-Man?",
+    "target_text": "{蜘蛛俠}？"
+  },
+  {
+    "row": 181,
+    "source_text": "Where am I?",
+    "target_text": "我在哪？"
+  },
+  {
+    "row": 182,
+    "source_text": "What... Ask the right questions.",
+    "target_text": "拘留她盤問"
+  },
+  {
+    "row": 183,
+    "source_text": "Evacuate the building.",
+    "target_text": "清空大樓"
+  },
+  {
+    "row": 184,
+    "source_text": "Enjoy the ride, Scorpion.",
+    "target_text": "享受旅程吧，{蠍子人}！"
+  },
+  {
+    "row": 185,
+    "source_text": "You won't see me at Supermax.",
+    "target_text": "你在超級監獄好難見到陽光"
+  },
+  {
+    "row": 186,
+    "source_text": "Scorpions are nocturnal, man.",
+    "target_text": "蠍子是夜行動物，老友"
+  },
+  {
+    "row": 187,
+    "source_text": "The building is under attack.",
+    "target_text": "大樓受襲"
+  },
+  {
+    "row": 188,
+    "source_text": "Get the prisoner out of here now!",
+    "target_text": "立刻撤離囚犯！"
+  },
+  {
+    "row": 189,
+    "source_text": "You gotta go now!",
+    "target_text": "立即起飛！"
+  },
+  {
+    "row": 190,
+    "source_text": "The building has been breached.",
+    "target_text": "大樓遇襲！走！快走！"
+  },
+  {
+    "row": 191,
+    "source_text": "Go, go!",
+    "target_text": "起飛！走！走！"
+  },
+  {
+    "row": 192,
+    "source_text": "Change of plans.",
+    "target_text": "計劃有變！"
+  },
+  {
+    "row": 193,
+    "source_text": "Take him to the Bellevue helipad.",
+    "target_text": "帶他去{貝爾維尤}的停機坪"
+  },
+  {
+    "row": 194,
+    "source_text": "It's a direct order from Mexico.",
+    "target_text": "是{梅茨格}局長的命令，去！"
+  },
+  {
+    "row": 195,
+    "source_text": "Move out now!",
+    "target_text": "即刻！"
+  },
+  {
+    "row": 196,
+    "source_text": "Copy that.",
+    "target_text": "收到"
+  },
+  {
+    "row": 197,
+    "source_text": "How did I get up here?",
+    "target_text": "我怎麼上來的？"
+  },
+  {
+    "row": 198,
+    "source_text": "Spider-Man.",
+    "target_text": "{蜘蛛俠}"
+  },
+  {
+    "row": 199,
+    "source_text": "Can you save me?",
+    "target_text": "救我好嗎？"
+  },
+  {
+    "row": 200,
+    "source_text": "Who are you?",
+    "target_text": "你是誰？"
+  },
+  {
+    "row": 201,
+    "source_text": "You can see me.",
+    "target_text": "你看得見我"
+  },
+  {
+    "row": 202,
+    "source_text": "Tell me who you are.",
+    "target_text": "講出你身份"
+  },
+  {
+    "row": 203,
+    "source_text": "You first.",
+    "target_text": "你講先"
+  },
+  {
+    "row": 204,
+    "source_text": "You blocked me.",
+    "target_text": "你推了我出來"
+  },
+  {
+    "row": 205,
+    "source_text": "Interesting.",
+    "target_text": "有趣"
+  },
+  {
+    "row": 206,
+    "source_text": "What the hell?",
+    "target_text": "剛才怎麼回事？"
+  },
+  {
+    "row": 207,
+    "source_text": "You tried to get into my mind?",
+    "target_text": "你想跳入我個腦？"
+  },
+  {
+    "row": 208,
+    "source_text": "You know, all this time you've been chasing me,",
+    "target_text": "你知嘛，你追捕我時…"
+  },
+  {
+    "row": 209,
+    "source_text": "you forgot to ask a very important question.",
+    "target_text": "忘了問自己一個非常重要的問題"
+  },
+  {
+    "row": 210,
+    "source_text": "What's in the tank?",
+    "target_text": "坦克裏有甚麼？"
+  },
+  {
+    "row": 211,
+    "source_text": "Spider-Man?",
+    "target_text": "{蜘蛛俠}？"
+  },
+  {
+    "row": 212,
+    "source_text": "What happened?",
+    "target_text": "怎麼回事？"
+  },
+  {
+    "row": 213,
+    "source_text": "I don't know.",
+    "target_text": "我不知道"
+  },
+  {
+    "row": 214,
+    "source_text": "Good job.",
+    "target_text": "做得好"
+  },
+  {
+    "row": 215,
+    "source_text": "Are you okay?",
+    "target_text": "做得好，{蜘蛛仔}"
+  },
+  {
+    "row": 216,
+    "source_text": "Alright?",
+    "target_text": "大家沒事？你沒事吧？"
+  },
+  {
+    "row": 217,
+    "source_text": "I swear, whatever I did, I don't remember anything.",
+    "target_text": "我發誓，他們說我做過的 我都不記得"
+  },
+  {
+    "row": 218,
+    "source_text": "Take it easy.",
+    "target_text": "沒事的"
+  },
+  {
+    "row": 219,
+    "source_text": "Let them take care of you.",
+    "target_text": "讓他們好好照顧你"
+  },
+  {
+    "row": 220,
+    "source_text": "I would never hurt him.",
+    "target_text": "我永遠不會傷害你"
+  },
+  {
+    "row": 221,
+    "source_text": "Okay.",
+    "target_text": "好了"
+  },
+  {
+    "row": 222,
+    "source_text": "I love you, Spider-Man.",
+    "target_text": "我愛你，{蜘蛛俠}"
+  },
+  {
+    "row": 223,
+    "source_text": "Alright, man, alright.",
+    "target_text": "得喇，老友"
+  },
+  {
+    "row": 224,
+    "source_text": "Anything?",
+    "target_text": "你查到甚麼？"
+  },
+  {
+    "row": 225,
+    "source_text": "Here.",
+    "target_text": "聽住"
+  },
+  {
+    "row": 226,
+    "source_text": "The helicopter took Scorpion to Bellevue.",
+    "target_text": "直升機送了{蠍子人}去{貝爾維尤}"
+  },
+  {
+    "row": 227,
+    "source_text": "Ten minutes later, a guard let him go.",
+    "target_text": "十分鐘後 一名警衛直接帶他走出門"
+  },
+  {
+    "row": 228,
+    "source_text": "What?",
+    "target_text": "甚麼？"
+  },
+  {
+    "row": 229,
+    "source_text": "And the tank?",
+    "target_text": "那坦克呢？"
+  },
+  {
+    "row": 230,
+    "source_text": "It was stolen from a Damage Control",
+    "target_text": "偷自{布魯克林}的"
+  },
+  {
+    "row": 231,
+    "source_text": "warehouse in Brooklyn.",
+    "target_text": "{災控部}倉庫"
+  },
+  {
+    "row": 232,
+    "source_text": "The driver was a janitor there.",
+    "target_text": "司機是那裏的清潔工"
+  },
+  {
+    "row": 233,
+    "source_text": "Any motive?",
+    "target_text": "有動機嗎？"
+  },
+  {
+    "row": 234,
+    "source_text": "No.",
+    "target_text": "沒有"
+  },
+  {
+    "row": 235,
+    "source_text": "And no criminal record.",
+    "target_text": "而且沒案底"
+  },
+  {
+    "row": 236,
+    "source_text": "Scorpion must have influenced her somehow.",
+    "target_text": "{蠍子人}定是用某種方式操控她"
+  },
+  {
+    "row": 237,
+    "source_text": "Okay.",
+    "target_text": "對"
+  },
+  {
+    "row": 238,
+    "source_text": "Yeah, maybe.",
+    "target_text": "可能是"
+  },
+  {
+    "row": 239,
+    "source_text": "What do you mean \"maybe\"?",
+    "target_text": "「可能是」？"
+  },
+  {
+    "row": 240,
+    "source_text": "I don't know.",
+    "target_text": "我不知道"
+  },
+  {
+    "row": 241,
+    "source_text": "But I know who to ask.",
+    "target_text": "但有個人可能會知"
+  },
+  {
+    "row": 242,
+    "source_text": "Where are you going?",
+    "target_text": "你去哪？"
+  },
+  {
+    "row": 243,
+    "source_text": "Keep looking for Scorpion.",
+    "target_text": "你繼續查{蠍子人}的線索"
+  },
+  {
+    "row": 244,
+    "source_text": "I'm gonna go talk to someone.",
+    "target_text": "我去搵個人傾傾"
+  },
+  {
+    "row": 245,
+    "source_text": "Hey, is this 3250 Brighton Beach?",
+    "target_text": "嗨，這裏是{布萊頓海灘} 3250 號？"
+  },
+  {
+    "row": 246,
+    "source_text": "Okay.",
+    "target_text": "好吧"
+  },
+  {
+    "row": 247,
+    "source_text": "I think I got it.",
+    "target_text": "我估我明你意思"
+  },
+  {
+    "row": 248,
+    "source_text": "Take your clothes off.",
+    "target_text": "除衫"
+  },
+  {
+    "row": 249,
+    "source_text": "What?",
+    "target_text": "吓？"
+  },
+  {
+    "row": 250,
+    "source_text": "We don't wear clothes in the sauna.",
+    "target_text": "在浴場不着衫的"
+  },
+  {
+    "row": 251,
+    "source_text": "Take off the spandex.",
+    "target_text": "除低緊身衣"
+  },
+  {
+    "row": 252,
+    "source_text": "It's not spandex.",
+    "target_text": "這不是緊身衣"
+  },
+  {
+    "row": 253,
+    "source_text": "Your tech told me this is your office.",
+    "target_text": "你短訊說 這裏是你的辦公室"
+  },
+  {
+    "row": 254,
+    "source_text": "This is my office.",
+    "target_text": "這是我的辦公室"
+  },
+  {
+    "row": 255,
+    "source_text": "Come on.",
+    "target_text": "進來吧"
+  },
+  {
+    "row": 256,
+    "source_text": "I'm good, thanks.",
+    "target_text": "不用了，我就…"
+  },
+  {
+    "row": 257,
+    "source_text": "In my office, my rules.",
+    "target_text": "我的辦公室，我的規矩"
+  },
+  {
+    "row": 258,
+    "source_text": "That way, you enjoy a relaxing bath",
+    "target_text": "這樣你就能舒服、放鬆地浸浴"
+  },
+  {
+    "row": 259,
+    "source_text": "and I make sure you're not armed.",
+    "target_text": "我亦能確認你無帶任何武器"
+  },
+  {
+    "row": 260,
+    "source_text": "We both win.",
+    "target_text": "雙贏"
+  },
+  {
+    "row": 261,
+    "source_text": "Okay.",
+    "target_text": "好吧"
+  },
+  {
+    "row": 262,
+    "source_text": "Seriously?",
+    "target_text": "認真？"
+  },
+  {
+    "row": 263,
+    "source_text": "You never take it off?",
+    "target_text": "你從不除面罩？"
+  },
+  {
+    "row": 264,
+    "source_text": "No, it would ruin the mystery.",
+    "target_text": "不，我… 除低就失去匿名意義"
+  },
+  {
+    "row": 265,
+    "source_text": "Not even for your girl or your boyfriend?",
+    "target_text": "即使是面對你女友 或男友"
+  },
+  {
+    "row": 266,
+    "source_text": "Or anyone.",
+    "target_text": "或其他人？"
+  },
+  {
+    "row": 267,
+    "source_text": "There are a lot of rumors going around.",
+    "target_text": "網上有很多推測"
+  },
+  {
+    "row": 268,
+    "source_text": "And some very bold pictures.",
+    "target_text": "還有超露骨的畫作，你看過嗎？"
+  },
+  {
+    "row": 269,
+    "source_text": "Did you see the one with the ten Mysterios?",
+    "target_text": "你和十個{神秘客}那幅畫，簡直…"
+  },
+  {
+    "row": 270,
+    "source_text": "I saw it.",
+    "target_text": "我睇過，我…"
+  },
+  {
+    "row": 271,
+    "source_text": "Hard to forget.",
+    "target_text": "老實講，很難忘掉"
+  },
+  {
+    "row": 272,
+    "source_text": "But I don't have anyone.",
+    "target_text": "但我沒任何熟人"
+  },
+  {
+    "row": 273,
+    "source_text": "I'm a loner.",
+    "target_text": "獨來獨往"
+  },
+  {
+    "row": 274,
+    "source_text": "By yourself all the time?",
+    "target_text": "一直得自己一個？"
+  },
+  {
+    "row": 275,
+    "source_text": "That's why you're so sad.",
+    "target_text": "難怪你這麼憂鬱"
+  },
+  {
+    "row": 276,
+    "source_text": "I'm not sad.",
+    "target_text": "我冇憂鬱"
+  },
+  {
+    "row": 277,
+    "source_text": "A little.",
+    "target_text": "有一點"
+  },
+  {
+    "row": 278,
+    "source_text": "Can we talk about why I'm here?",
+    "target_text": "不如傾返正經事？"
+  },
+  {
+    "row": 279,
+    "source_text": "The Damage Control attack?",
+    "target_text": "{災控部}的襲擊？"
+  },
+  {
+    "row": 280,
+    "source_text": "That's more your thing.",
+    "target_text": "好，那其實是你的範疇"
+  },
+  {
+    "row": 281,
+    "source_text": "Small stuff.",
+    "target_text": "小薯仔濕碎料"
+  },
+  {
+    "row": 282,
+    "source_text": "While the new Avengers handle the big stuff.",
+    "target_text": "而{新復仇者聯盟}專門做大單嘢"
+  },
+  {
+    "row": 283,
+    "source_text": "Yeah, okay.",
+    "target_text": "好吧"
+  },
+  {
+    "row": 284,
+    "source_text": "It's not that simple.",
+    "target_text": "但件事不止那樣"
+  },
+  {
+    "row": 285,
+    "source_text": "The driver and the other helpers",
+    "target_text": "那個司機和其他幫忙的人…"
+  },
+  {
+    "row": 286,
+    "source_text": "seemed like someone was speaking through them.",
+    "target_text": "感覺像是有人透過他們跟我說話"
+  },
+  {
+    "row": 287,
+    "source_text": "Like someone was seeing through their eyes.",
+    "target_text": "像有人透過他們雙眼望住我"
+  },
+  {
+    "row": 288,
+    "source_text": "You suspect mind control?",
+    "target_text": "而你懷疑是精神控制？"
+  },
+  {
+    "row": 289,
+    "source_text": "Exactly.",
+    "target_text": "正是"
+  },
+  {
+    "row": 290,
+    "source_text": "Like in the Red Room?",
+    "target_text": "像{紅室}對我用那種？"
+  },
+  {
+    "row": 291,
+    "source_text": "Exactly.",
+    "target_text": "正是"
+  },
+  {
+    "row": 292,
+    "source_text": "And the other outcasts?",
+    "target_text": "懷疑有其他{黑寡婦}？"
+  },
+  {
+    "row": 293,
+    "source_text": "Yeah, yeah.",
+    "target_text": "無錯"
+  },
+  {
+    "row": 294,
+    "source_text": "No, I don't think so.",
+    "target_text": "不，我不認為是"
+  },
+  {
+    "row": 295,
+    "source_text": "I think it's more like demonic possession.",
+    "target_text": "我其實覺得更像是附身"
+  },
+  {
+    "row": 296,
+    "source_text": "Possession?",
+    "target_text": "附身？"
+  },
+  {
+    "row": 297,
+    "source_text": "Like a ghost, demon, or in Russia we have the Leshy.",
+    "target_text": "像是鬼魂或惡魔"
+  },
+  {
+    "row": 298,
+    "source_text": "The Leshy rules the forest and can possess you...",
+    "target_text": "{萊希}統治森林並能附身"
+  },
+  {
+    "row": 299,
+    "source_text": "Sorry.",
+    "target_text": "抱歉"
+  },
+  {
+    "row": 300,
+    "source_text": "Anyway, they're looking for something.",
+    "target_text": "不管那是甚麼，他們在找某樣東西"
+  },
+  {
+    "row": 301,
+    "source_text": "It's the fourth attack on a Damage",
+    "target_text": "這是本月第四次攻擊"
+  },
+  {
+    "row": 302,
+    "source_text": "Control facility in a month.",
+    "target_text": "{災控部}設施了"
+  },
+  {
+    "row": 303,
+    "source_text": "What do you think they're looking for?",
+    "target_text": "你覺得他們在找甚麼？"
+  },
+  {
+    "row": 304,
+    "source_text": "I don't know.",
+    "target_text": "我不知道"
+  },
+  {
+    "row": 305,
+    "source_text": "But you know something?",
+    "target_text": "但你知嘛？"
+  },
+  {
+    "row": 306,
+    "source_text": "After today's attack, a cross-border",
+    "target_text": "在今天的襲擊之後…"
+  },
+  {
+    "row": 307,
+    "source_text": "cybersecurity alert was triggered.",
+    "target_text": "觸發了一個跨部門的網絡安全警報"
+  },
+  {
+    "row": 308,
+    "source_text": "Someone accessed the Damage Control servers",
+    "target_text": "有人進入了{災控部}的限制伺服器"
+  },
+  {
+    "row": 309,
+    "source_text": "using the credentials of 30 employees from the relay.",
+    "target_text": "用了中繼站 30 名員工的帳戶"
+  },
+  {
+    "row": 310,
+    "source_text": "They were all looking for the same thing.",
+    "target_text": "全部都搜尋了同樣的東西"
+  },
+  {
+    "row": 311,
+    "source_text": "V-Max.",
+    "target_text": "V-Max"
+  },
+  {
+    "row": 312,
+    "source_text": "V-Max?",
+    "target_text": "V-Max?"
+  },
+  {
+    "row": 313,
+    "source_text": "What does that mean?",
+    "target_text": "那是甚麼意思？"
+  },
+  {
+    "row": 314,
+    "source_text": "Could be alien technology, secret",
+    "target_text": "可能是外星科技"
+  },
+  {
+    "row": 315,
+    "source_text": "weapons programs, launch codes, or...",
+    "target_text": "或秘密武器計劃"
+  },
+  {
+    "row": 316,
+    "source_text": "I don't know.",
+    "target_text": "我不知道"
+  },
+  {
+    "row": 317,
+    "source_text": "You need to find out.",
+    "target_text": "你自己去查"
+  },
+  {
+    "row": 318,
+    "source_text": "It's small stuff, not big.",
+    "target_text": "這是小薯仔濕碎料 不是大單嘢"
+  },
+  {
+    "row": 319,
+    "source_text": "Maybe I'll ask Damage Control directly. Alright, alright.",
+    "target_text": "我或直接去問{災控部}"
+  },
+  {
+    "row": 320,
+    "source_text": "You're not completely anonymous anymore.",
+    "target_text": "你知嘛，你已不算完全匿名"
+  },
+  {
+    "row": 321,
+    "source_text": "I saw your belly button.",
+    "target_text": "我見過你個肚臍了"
+  },
+  {
+    "row": 322,
+    "source_text": "Okay.",
+    "target_text": "好吧"
+  },
+  {
+    "row": 323,
+    "source_text": "Bye.",
+    "target_text": "拜拜"
+  },
+  {
+    "row": 324,
+    "source_text": "Hi, I have an appointment with... Director Metzger.",
+    "target_text": "嗨，我約了…{梅茨格}局長，沒錯"
+  },
+  {
+    "row": 325,
+    "source_text": "Step through the scanner.",
+    "target_text": "請踏進掃描器"
+  },
+  {
+    "row": 326,
+    "source_text": "Enhanced human detected.",
+    "target_text": "偵測到強化人類"
+  },
+  {
+    "row": 327,
+    "source_text": "Increased strength.",
+    "target_text": "超強力量"
+  },
+  {
+    "row": 328,
+    "source_text": "Increased agility.",
+    "target_text": "超級敏捷"
+  },
+  {
+    "row": 329,
+    "source_text": "Overdeveloped senses.",
+    "target_text": "強化感官"
+  },
+  {
+    "row": 330,
+    "source_text": "Foreign DNA.",
+    "target_text": "外源 DNA"
+  },
+  {
+    "row": 331,
+    "source_text": "Spider.",
+    "target_text": "蛛形綱"
+  },
+  {
+    "row": 332,
+    "source_text": "Remove your mask for identity scan.",
+    "target_text": "請除下面罩進行身份掃描"
+  },
+  {
+    "row": 333,
+    "source_text": "I can't.",
+    "target_text": "不，我不能除"
+  },
+  {
+    "row": 334,
+    "source_text": "No can do.",
+    "target_text": "無可能"
+  },
+  {
+    "row": 335,
+    "source_text": "Refusal will result in security measures.",
+    "target_text": "拒絕除面罩 會觸發防禦措施"
+  },
+  {
+    "row": 336,
+    "source_text": "Security measures?",
+    "target_text": "防禦措施？你講咩…"
+  },
+  {
+    "row": 337,
+    "source_text": "I can't take the mask off.",
+    "target_text": "各位！我不能除面罩"
+  },
+  {
+    "row": 338,
+    "source_text": "I'm...",
+    "target_text": "我是…"
+  },
+  {
+    "row": 339,
+    "source_text": "Spider-Man.",
+    "target_text": "蜘蛛俠"
+  },
+  {
+    "row": 340,
+    "source_text": "It's okay.",
+    "target_text": "他沒問題"
+  },
+  {
+    "row": 341,
+    "source_text": "Relax.",
+    "target_text": "稍息"
+  },
+  {
+    "row": 342,
+    "source_text": "Sorry.",
+    "target_text": "我很抱歉"
+  },
+  {
+    "row": 343,
+    "source_text": "Glad to have you here.",
+    "target_text": "我們很高興你來"
+  },
+  {
+    "row": 344,
+    "source_text": "Bill Metzger, Director of Damage Control.",
+    "target_text": "{比爾梅茨格}，{災控部}局長"
+  },
+  {
+    "row": 345,
+    "source_text": "How are you?",
+    "target_text": "你好嘛？"
+  },
+  {
+    "row": 346,
+    "source_text": "Good, thanks.",
+    "target_text": "我很好，謝謝"
+  },
+  {
+    "row": 347,
+    "source_text": "We've tightened up security, hope it didn't spook you.",
+    "target_text": "我們必須加強這裏的保安 希望沒嚇到你"
+  },
+  {
+    "row": 348,
+    "source_text": "Not at all.",
+    "target_text": "完全沒有"
+  },
+  {
+    "row": 349,
+    "source_text": "Follow me.",
+    "target_text": "好了，這邊走"
+  },
+  {
+    "row": 350,
+    "source_text": "This floor is research and admin.",
+    "target_text": "這一層主要是研究和行政"
+  },
+  {
+    "row": 351,
+    "source_text": "Downstairs is our incident response division.",
+    "target_text": "樓下有事故清理 實驗室"
+  },
+  {
+    "row": 352,
+    "source_text": "Agent training.",
+    "target_text": "特工訓練"
+  },
+  {
+    "row": 353,
+    "source_text": "What are they doing there?",
+    "target_text": "他們怎會在？"
+  },
+  {
+    "row": 354,
+    "source_text": "Relax.",
+    "target_text": "不要緊的"
+  },
+  {
+    "row": 355,
+    "source_text": "The Hand is working for us now.",
+    "target_text": "{手合會}現為我們效力"
+  },
+  {
+    "row": 356,
+    "source_text": "When you brought them in, I realized they were",
+    "target_text": "你逮捕他們後，我意識到…"
+  },
+  {
+    "row": 357,
+    "source_text": "basically just a bunch of lost kids.",
+    "target_text": "基本上他們只是一群 沒有領導者的孩子"
+  },
+  {
+    "row": 358,
+    "source_text": "All they needed was a little guidance.",
+    "target_text": "他們只需要一點指引"
+  },
+  {
+    "row": 359,
+    "source_text": "And suddenly, everything that made them dangerous",
+    "target_text": "突然，他們的危險特質…"
+  },
+  {
+    "row": 360,
+    "source_text": "made them a valuable part of our security team.",
+    "target_text": "變成了我們保安團隊中 無價的一部分"
+  },
+  {
+    "row": 361,
+    "source_text": "You can look at threats and only see the danger.",
+    "target_text": "面對各種威脅時 你可只看到危險…"
+  },
+  {
+    "row": 362,
+    "source_text": "Or you can see opportunities.",
+    "target_text": "又或者看到機會"
+  },
+  {
+    "row": 363,
+    "source_text": "Alright.",
+    "target_text": "好吧"
+  },
+  {
+    "row": 364,
+    "source_text": "Check this out.",
+    "target_text": "嘩，犀利"
+  },
+  {
+    "row": 365,
+    "source_text": "In Shocker's hands, these are a nuisance.",
+    "target_text": "在{震動人}手裏，這些是個禍害"
+  },
+  {
+    "row": 366,
+    "source_text": "But we can learn from the",
+    "target_text": "但亦可學習箇中技術…"
+  },
+  {
+    "row": 367,
+    "source_text": "technology or appreciate the innovation.",
+    "target_text": "或尊重這項發明"
+  },
+  {
+    "row": 368,
+    "source_text": "Our mission is to turn",
+    "target_text": "我們的使命是將破壞力"
+  },
+  {
+    "row": 369,
+    "source_text": "destructive energy into something useful.",
+    "target_text": "轉化為有用的東西"
+  },
+  {
+    "row": 370,
+    "source_text": "That's the real meaning of damage control.",
+    "target_text": "這才是{災控部}的真正意義"
+  },
+  {
+    "row": 371,
+    "source_text": "Watch that.",
+    "target_text": "小心處理"
+  },
+  {
+    "row": 372,
+    "source_text": "This way.",
+    "target_text": "這邊請"
+  },
+  {
+    "row": 373,
+    "source_text": "I wanted to talk about the",
+    "target_text": "我想和你談談"
+  },
+  {
+    "row": 374,
+    "source_text": "recent attacks on the agency.",
+    "target_text": "最近對{災控部}的攻擊"
+  },
+  {
+    "row": 375,
+    "source_text": "There were four, right?",
+    "target_text": "已經四次了吧？"
+  },
+  {
+    "row": 376,
+    "source_text": "Please, sit.",
+    "target_text": "請坐"
+  },
+  {
+    "row": 377,
+    "source_text": "Right.",
+    "target_text": "你說得對"
+  },
+  {
+    "row": 378,
+    "source_text": "We're dealing with a threat we can't control.",
+    "target_text": "我們似乎正面對無法控制的威脅"
+  },
+  {
+    "row": 379,
+    "source_text": "Something we can't even see.",
+    "target_text": "甚至是看不見的"
+  },
+  {
+    "row": 380,
+    "source_text": "But you can.",
+    "target_text": "但你可以"
+  },
+  {
+    "row": 381,
+    "source_text": "I saw the security footage.",
+    "target_text": "我看過監控錄像"
+  },
+  {
+    "row": 382,
+    "source_text": "And I read Detective DeWolfe's report.",
+    "target_text": "亦看了{德沃夫}警探的報告"
+  },
+  {
+    "row": 383,
+    "source_text": "You know exactly what we're dealing with.",
+    "target_text": "我相信你完全明白敵人是甚麼"
+  },
+  {
+    "row": 384,
+    "source_text": "Someone or something can get into people's minds.",
+    "target_text": "某人或某種東西 能跳入別人的腦海"
+  },
+  {
+    "row": 385,
+    "source_text": "Not yours.",
+    "target_text": "但你的不行"
+  },
+  {
+    "row": 386,
+    "source_text": "It tried, but it couldn't.",
+    "target_text": "對…它試過，但失敗"
+  },
+  {
+    "row": 387,
+    "source_text": "I'll be honest.",
+    "target_text": "我坦白跟你說"
+  },
+  {
+    "row": 388,
+    "source_text": "We're at a disadvantage.",
+    "target_text": "我們現在處於下風"
+  },
+  {
+    "row": 389,
+    "source_text": "If it finds what it's looking for,",
+    "target_text": "若它進到這裏，找到想要的…"
+  },
+  {
+    "row": 390,
+    "source_text": "the consequences will be unimaginable.",
+    "target_text": "後果可能…不堪設想"
+  },
+  {
+    "row": 391,
+    "source_text": "Let me guess.",
+    "target_text": "我估吓…"
+  },
+  {
+    "row": 392,
+    "source_text": "What it's looking for is in that basement?",
+    "target_text": "它要找的 在那巨型保險庫內？"
+  },
+  {
+    "row": 393,
+    "source_text": "Some things, due to the nature of the job",
+    "target_text": "有些事情，鑑於我的工作性質…"
+  },
+  {
+    "row": 394,
+    "source_text": "I can't say.",
+    "target_text": "我不能告訴你"
+  },
+  {
+    "row": 395,
+    "source_text": "But you're our best defense.",
+    "target_text": "但我相信，你是抗敵的最佳防線"
+  },
+  {
+    "row": 396,
+    "source_text": "You're the only one who can sense it.",
+    "target_text": "只有你能感應到它"
+  },
+  {
+    "row": 397,
+    "source_text": "You're the only one who's immune.",
+    "target_text": "只有你對它免疫"
+  },
+  {
+    "row": 398,
+    "source_text": "I'm counting on you to stop it.",
+    "target_text": "我指望你打敗它"
+  },
+  {
+    "row": 399,
+    "source_text": "Good reason, Director.",
+    "target_text": "講得好有說服力，局長"
+  },
+  {
+    "row": 400,
+    "source_text": "I promise to do what I can.",
+    "target_text": "我會盡我所能，我保證"
+  },
+  {
+    "row": 401,
+    "source_text": "Then you're a friend of Damage Control.",
+    "target_text": "那你就是{災控部}的朋友"
+  },
+  {
+    "row": 402,
+    "source_text": "Thank you.",
+    "target_text": "謝謝"
+  },
+  {
+    "row": 403,
+    "source_text": "I'll be in touch.",
+    "target_text": "保持聯絡"
+  },
+  {
+    "row": 404,
+    "source_text": "I have a question.",
+    "target_text": "我想問…"
+  },
+  {
+    "row": 405,
+    "source_text": "Does the word V-Max mean anything to you?",
+    "target_text": "「V-Max」這個詞，你有印象嗎？"
+  },
+  {
+    "row": 406,
+    "source_text": "No.",
+    "target_text": "沒有"
+  },
+  {
+    "row": 407,
+    "source_text": "Where did you hear it?",
+    "target_text": "你在哪聽到的？"
+  },
+  {
+    "row": 408,
+    "source_text": "Due to the nature of my job",
+    "target_text": "你知啦，鑑於我是超級英雄…"
+  },
+  {
+    "row": 409,
+    "source_text": "some things I can't say.",
+    "target_text": "有些事我不能告訴你"
+  },
+  {
+    "row": 410,
+    "source_text": "See you around.",
+    "target_text": "好了，下次見"
+  },
+  {
+    "row": 411,
+    "source_text": "You guys are doing great.",
+    "target_text": "各位做得很好"
+  },
+  {
+    "row": 412,
+    "source_text": "Keep it up.",
+    "target_text": "繼續保持"
+  },
+  {
+    "row": 413,
+    "source_text": "Metzger doesn't know more than us,",
+    "target_text": "我不認為{梅茨格}比我們知得更多"
+  },
+  {
+    "row": 414,
+    "source_text": "but I promised I'd help.",
+    "target_text": "但我說我會盡力幫忙"
+  },
+  {
+    "row": 415,
+    "source_text": "You want to help?",
+    "target_text": "你想幫忙？"
+  },
+  {
+    "row": 416,
+    "source_text": "The best thing you can do is find Scorpion.",
+    "target_text": "你最好就是…找出{蠍子人}"
+  },
+  {
+    "row": 417,
+    "source_text": "He's our only lead.",
+    "target_text": "他是唯一線索"
+  },
+  {
+    "row": 418,
+    "source_text": "I know.",
+    "target_text": "我知"
+  },
+  {
+    "row": 419,
+    "source_text": "I've got all the cameras doing facial recognition.",
+    "target_text": "我已讓全城鏡頭 一直對他進行人臉識別"
+  },
+  {
+    "row": 420,
+    "source_text": "Sounds illegal, Spider-Man.",
+    "target_text": "聽落犯晒法{蜘蛛俠}"
+  },
+  {
+    "row": 421,
+    "source_text": "I'll pretend I didn't hear that.",
+    "target_text": "我當無聽過"
+  },
+  {
+    "row": 422,
+    "source_text": "Better.",
+    "target_text": "最好或是這樣"
+  },
+  {
+    "row": 423,
+    "source_text": "If he shows up, we'll know.",
+    "target_text": "但若他露面，我們會知道"
+  },
+  {
+    "row": 424,
+    "source_text": "Any thanks?",
+    "target_text": "有迷你桶啤酒嗎？"
+  },
+  {
+    "row": 425,
+    "source_text": "Deep down.",
+    "target_text": "在最後面"
+  },
+  {
+    "row": 426,
+    "source_text": "Thanks.",
+    "target_text": "謝謝"
+  },
+  {
+    "row": 427,
+    "source_text": "I'll call you.",
+    "target_text": "我再覆你"
+  },
+  {
+    "row": 428,
+    "source_text": "Okay.",
+    "target_text": "掂"
+  },
+  {
+    "row": 429,
+    "source_text": "Easy.",
+    "target_text": "還有"
+  },
+  {
+    "row": 430,
+    "source_text": "Got any Sharkfire?",
+    "target_text": "有{鯊火}能量飲品嗎？"
+  },
+  {
+    "row": 431,
+    "source_text": "Yeah.",
+    "target_text": "有"
+  },
+  {
+    "row": 432,
+    "source_text": "No, no, no.",
+    "target_text": "不"
+  },
+  {
+    "row": 433,
+    "source_text": "I don't want any.",
+    "target_text": "我不要"
+  },
+  {
+    "row": 434,
+    "source_text": "That stuff will kill you.",
+    "target_text": "那東西會害死你"
+  },
+  {
+    "row": 435,
+    "source_text": "All my friends who drank it",
+    "target_text": "大考時，所有朋友都飲"
+  },
+  {
+    "row": 436,
+    "source_text": "during exams are now addicts.",
+    "target_text": "現在個個都上癮"
+  },
+  {
+    "row": 437,
+    "source_text": "Don't sell to me.",
+    "target_text": "所以請你不要賣給我"
+  },
+  {
+    "row": 438,
+    "source_text": "Remember my face.",
+    "target_text": "認住我個樣"
+  },
+  {
+    "row": 439,
+    "source_text": "Don't sell a single Sharkfire to him.",
+    "target_text": "請不要賣任何{鯊火}給他"
+  },
+  {
+    "row": 440,
+    "source_text": "Okay.",
+    "target_text": "好"
+  },
+  {
+    "row": 441,
+    "source_text": "Whatever you say.",
+    "target_text": "隨便"
+  },
+  {
+    "row": 442,
+    "source_text": "I'll take one.",
+    "target_text": "我都係要一樽"
+  },
+  {
+    "row": 443,
+    "source_text": "The last one.",
+    "target_text": "最後一樽"
+  },
+  {
+    "row": 444,
+    "source_text": "Or two.",
+    "target_text": "都係兩樽啦"
+  },
+  {
+    "row": 445,
+    "source_text": "And then don't sell to me again.",
+    "target_text": "然後永遠別再賣給我"
+  },
+  {
+    "row": 446,
+    "source_text": "Damn it.",
+    "target_text": "激氣"
+  },
+  {
+    "row": 447,
+    "source_text": "Through dynamic lattice, we can",
+    "target_text": "透過晶格色動力學…"
+  },
+  {
+    "row": 448,
+    "source_text": "organize time and space into a grid",
+    "target_text": "我們可以將 時間和空間排列成網格"
+  },
+  {
+    "row": 449,
+    "source_text": "that allows us to simulate",
+    "target_text": "我們就能模擬"
+  },
+  {
+    "row": 450,
+    "source_text": "the quarks binding into protons.",
+    "target_text": "夸克結合成質子的過程"
+  },
+  {
+    "row": 451,
+    "source_text": "Cindy, is that a question",
+    "target_text": "{仙迪}，問題是關於質子"
+  },
+  {
+    "row": 452,
+    "source_text": "about protons or the Avengers?",
+    "target_text": "抑或{復仇者聯盟}？"
+  },
+  {
+    "row": 453,
+    "source_text": "I like stories, but I need to teach you",
+    "target_text": "好了各位，我都鍾意講故…"
+  },
+  {
+    "row": 454,
+    "source_text": "some physics, alright?",
+    "target_text": "但我總得教一些物理學"
+  },
+  {
+    "row": 455,
+    "source_text": "Alright.",
+    "target_text": "好了…"
+  },
+  {
+    "row": 456,
+    "source_text": "Tell us, Cindy.",
+    "target_text": "問吧，{仙迪}"
+  },
+  {
+    "row": 457,
+    "source_text": "If Thanos was so worried about overpopulation,",
+    "target_text": "如果{魁隆}這麼擔心人口過剩…"
+  },
+  {
+    "row": 458,
+    "source_text": "why didn't he use the gauntlet to make more food?",
+    "target_text": "為何不直接用魔法手套 製造更多食物？"
+  },
+  {
+    "row": 459,
+    "source_text": "Arthur, you want to take that?",
+    "target_text": "{亞瑟}，你想回答這問題嗎？"
+  },
+  {
+    "row": 460,
+    "source_text": "Bull!",
+    "target_text": "{變形俠醫}，粉碎！"
+  },
+  {
+    "row": 461,
+    "source_text": "No!",
+    "target_text": "答案就是這樣"
+  },
+  {
+    "row": 462,
+    "source_text": "Sorry, Dr. Banner?",
+    "target_text": "打擾一下，{班拿}博士，我…"
+  },
+  {
+    "row": 463,
+    "source_text": "Are you okay?",
+    "target_text": "你還好嗎？"
+  },
+  {
+    "row": 464,
+    "source_text": "Just a headache.",
+    "target_text": "沒事…抱歉，只是頭痛"
+  },
+  {
+    "row": 465,
+    "source_text": "Do you have a moment?",
+    "target_text": "你有時間嗎？"
+  },
+  {
+    "row": 466,
+    "source_text": "I'd like to talk to you about your inhibitor.",
+    "target_text": "我想談談你的抑制器"
+  },
+  {
+    "row": 467,
+    "source_text": "Sure.",
+    "target_text": "無問題"
+  },
+  {
+    "row": 468,
+    "source_text": "Easy.",
+    "target_text": "放心"
+  },
+  {
+    "row": 469,
+    "source_text": "There are safeguards.",
+    "target_text": "它有安全機制"
+  },
+  {
+    "row": 470,
+    "source_text": "I'm not going to turn into a giant",
+    "target_text": "我不會在食堂 變成綠色暴怒怪物"
+  },
+  {
+    "row": 471,
+    "source_text": "green monster in the cafeteria.",
+    "target_text": "變成綠色暴怒怪物"
+  },
+  {
+    "row": 472,
+    "source_text": "If you see me take it off, run.",
+    "target_text": "但如果你見到我無戴，即走"
+  },
+  {
+    "row": 473,
+    "source_text": "You're using targeted RNA, right?",
+    "target_text": "但你是用靶向小分子干擾 RNA 吧？"
+  },
+  {
+    "row": 474,
+    "source_text": "Like you're switching off genes,",
+    "target_text": "就像基因靜默"
+  },
+  {
+    "row": 475,
+    "source_text": "combined with gamma radiation.",
+    "target_text": "你只是整合了伽馬輻射？"
+  },
+  {
+    "row": 476,
+    "source_text": "What's your name?",
+    "target_text": "講多次你個名？"
+  },
+  {
+    "row": 477,
+    "source_text": "Ned.",
+    "target_text": "尼特"
+  },
+  {
+    "row": 478,
+    "source_text": "Leeds.",
+    "target_text": "利茲"
+  },
+  {
+    "row": 479,
+    "source_text": "You're blocking DNA expression, even in a mutation",
+    "target_text": "所以你找到了方法 來抑制 DNA 表現"
+  },
+  {
+    "row": 480,
+    "source_text": "from gamma radiation, right?",
+    "target_text": "即使它受伽馬輻射而突變？"
+  },
+  {
+    "row": 481,
+    "source_text": "Right.",
+    "target_text": "是的"
+  },
+  {
+    "row": 482,
+    "source_text": "My question is, could the same be done",
+    "target_text": "好吧，那我的問題是…"
+  },
+  {
+    "row": 483,
+    "source_text": "to DNA that's mutating for another reason?",
+    "target_text": "同樣方法是否適用於 因其他原因突變的 DNA？"
+  },
+  {
+    "row": 484,
+    "source_text": "What reason?",
+    "target_text": "甚麼原因？"
+  },
+  {
+    "row": 485,
+    "source_text": "I don't know.",
+    "target_text": "我不知道"
+  },
+  {
+    "row": 486,
+    "source_text": "Let's say the genome is mixing with foreign DNA.",
+    "target_text": "假設宿主基因組 與某種外源 DNA 混合"
+  },
+  {
+    "row": 487,
+    "source_text": "Theoretically.",
+    "target_text": "理論上"
+  },
+  {
+    "row": 488,
+    "source_text": "Theoretically, yes.",
+    "target_text": "理論上？可能有用"
+  },
+  {
+    "row": 489,
+    "source_text": "Could you block some of the DNA expressions?",
+    "target_text": "你能只抑制那 DNA 的某些表現嗎？"
+  },
+  {
+    "row": 490,
+    "source_text": "The bad ones, while keeping the good ones?",
+    "target_text": "例如壞的部分 但保留所有好的？"
+  },
+  {
+    "row": 491,
+    "source_text": "If I wanted to keep some of the",
+    "target_text": "你指只保留{變形俠醫}某些部分"
+  },
+  {
+    "row": 492,
+    "source_text": "Hulk's traits but not others?",
+    "target_text": "其他不留？"
+  },
+  {
+    "row": 493,
+    "source_text": "Right.",
+    "target_text": "沒錯"
+  },
+  {
+    "row": 494,
+    "source_text": "It would be extremely dangerous and complex, but",
+    "target_text": "那會非常危險和複雜，但…"
+  },
+  {
+    "row": 495,
+    "source_text": "if you target the right mRNA",
+    "target_text": "如果你能鎖定正確的 mRNA 鏈"
+  },
+  {
+    "row": 496,
+    "source_text": "then it's possible.",
+    "target_text": "有可能"
+  },
+  {
+    "row": 497,
+    "source_text": "Could you turn the mutant gene on or off",
+    "target_text": "即是可隨意開關突變基因…"
+  },
+  {
+    "row": 498,
+    "source_text": "before the mRNA is transcribed?",
+    "target_text": "只要在 mRNA 轉錄之前進行？"
+  },
+  {
+    "row": 499,
+    "source_text": "Maybe.",
+    "target_text": "也許"
+  },
+  {
+    "row": 500,
+    "source_text": "By that same logic, you could develop",
+    "target_text": "如果應用同樣的思路，甚至可以…"
+  },
+  {
+    "row": 501,
+    "source_text": "an automatic inhibitor",
+    "target_text": "開發某種自動抑制器…"
+  },
+  {
+    "row": 502,
+    "source_text": "for any kind of mutation.",
+    "target_text": "針對任何類型的突變而調節"
+  },
+  {
+    "row": 503,
+    "source_text": "You're talking about a universal inhibitor",
+    "target_text": "你是指一種通用抑制器…"
+  },
+  {
+    "row": 504,
+    "source_text": "that could control anyone with powers.",
+    "target_text": "可以控制任何有異能的人"
+  },
+  {
+    "row": 505,
+    "source_text": "Dangerous idea.",
+    "target_text": "這是個危險的想法"
+  },
+  {
+    "row": 506,
+    "source_text": "It's just theory.",
+    "target_text": "對，但只是理論上，不是嗎？"
+  },
+  {
+    "row": 507,
+    "source_text": "You're not my student.",
+    "target_text": "你不是我的學生吧？"
+  },
+  {
+    "row": 508,
+    "source_text": "No, I'm a grad student.",
+    "target_text": "不是，我是研究生"
+  },
+  {
+    "row": 509,
+    "source_text": "I've taken too much of your time.",
+    "target_text": "我已阻你太多時間"
+  },
+  {
+    "row": 510,
+    "source_text": "I need to get to the library.",
+    "target_text": "我要去圖書館還書"
+  },
+  {
+    "row": 511,
+    "source_text": "The library is that way.",
+    "target_text": "圖書館在那邊"
+  },
+  {
+    "row": 512,
+    "source_text": "Yeah.",
+    "target_text": "係喎"
+  },
+  {
+    "row": 513,
+    "source_text": "How do you decide?",
+    "target_text": "你憑甚麼決定？"
+  },
+  {
+    "row": 514,
+    "source_text": "What?",
+    "target_text": "甚麼？"
+  },
+  {
+    "row": 515,
+    "source_text": "Which parts of nature are good or bad?",
+    "target_text": "哪部分天性是好是壞？"
+  },
+  {
+    "row": 516,
+    "source_text": "What if you're trying to suppress something that's",
+    "target_text": "可能你試圖抑制的表現…"
+  },
+  {
+    "row": 517,
+    "source_text": "supposed to be expressed?",
+    "target_text": "是必須表現出來的？"
+  },
+  {
+    "row": 518,
+    "source_text": "Good luck, Ned.",
+    "target_text": "祝你的研究順利，{尼特}"
+  },
+  {
+    "row": 519,
+    "source_text": "Thank you, Professor.",
+    "target_text": "謝謝你，教授"
+  }
+]
