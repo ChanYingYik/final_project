@@ -2,90 +2,94 @@
   "use strict";
 
   const PAGE = document.documentElement.dataset.page || "explore";
-  const CATEGORY_ORDER = ["communication", "control", "affect", "process"];
-  const REALIZATION_ORDER = ["verb-first", "modulated", "embedded"];
+  const CATEGORY_ORDER = ["condensation", "explicitation", "transposition", "congruence"];
+  const REALIZATION_ORDER = ["compact", "balanced", "expanded"];
   const REVIEW_KEY = "nv-human-checks-v1";
   const PAGE_SIZE = 12;
 
   const I18N = {
     en: {
-      "brand.subtitle": "Corpus explorer",
+      "brand.subtitle": "Subtitle strategy explorer",
       "nav.explore": "Explore",
       "nav.report": "Learning report",
       "nav.codebook": "Codebook",
       "nav.review": "Quality check",
       "nav.ai": "AI use",
       "a11y.skip": "Skip to content",
-      "home.eyebrow": "A 500-pair English-Chinese subtitle corpus",
-      "home.title": "When nouns become verbs.",
-      "home.lede": "Explore how English event and state nominals are unpacked as Chinese verbs, and use linked views to compare meaning, syntax and translation choice.",
+      "home.eyebrow": "A 502-pair English-Cantonese subtitle corpus",
+      "home.title": "Every line arrives twice.",
+      "home.lede": "Compare 502 supplied English-Cantonese film cues, then follow compaction, explicitation, structural change and dialogue function across linked views.",
       "home.start": "Explore the corpus",
       "home.read": "Read the research",
       "home.questionLabel": "Research question",
-      "home.question": "Which kinds of English nominal meaning become Chinese verbs, and where does the verb appear?",
-      "home.theory": "The analysis uses grammatical metaphor and transposition to treat verbalisation as a meaningful shift in information packaging.",
-      "stat.entries": "sentence pairs",
-      "stat.terms": "English key terms",
+      "home.question": "Which visible translation profiles recur across the supplied subtitle pairs?",
+      "home.theory": "The analysis combines condensation, explicitation and transposition with dialogue function and length as explicit controls.",
+      "stat.entries": "short cue pairs",
+      "stat.terms": "dialogue functions",
       "stat.checked": "human checked",
       "home.sourceLabel": "Corpus label",
-      "home.source": "OpenSubtitles 2024 en-zh_CN, supplied as a 500-row CSV.",
+      "home.source": "502 complete unique pairs extracted from the supplied Final project.xlsx workbook and checked against its source subtitles.",
       "home.sourceDetails": "Read provenance and limitations",
       "quality.title": "Verification needed",
-      "quality.body": "No entries are marked as human checked in the published dataset. Use the quality check page to review a random sample before submission.",
+      "quality.body": "The seeded 50-entry review is complete. Continue checking further entries on the quality check page.",
       "quality.action": "Start 50-entry review",
       "explore.eyebrow": "Interactive corpus",
       "explore.title": "Follow a pattern across every view.",
       "explore.intro": "Search, filter and click any term. The charts and table update together, and the current view is kept in the URL.",
-      "filter.search": "Search source, translation or key term",
-      "filter.searchPlaceholder": "e.g. attention, 注意, permission",
-      "filter.category": "Meaning category",
+      "filter.search": "Search English, Chinese or feature",
+      "filter.searchPlaceholder": "e.g. statement, 咩, expanded",
+      "filter.category": "Translation profile",
       "filter.allCategories": "All categories",
       "filter.checked": "Human checked",
       "filter.allStatuses": "All statuses",
       "filter.yes": "Yes",
       "filter.no": "No",
-      "filter.realization": "Chinese verb position",
-      "filter.allPositions": "All positions",
+      "filter.realization": "Length band",
+      "filter.allPositions": "All length bands",
       "filter.reset": "Reset",
       "filter.copy": "Copy view link",
-      "category.communication": "Speech & thought",
-      "category.control": "Law & control",
-      "category.affect": "Emotion & state",
-      "category.process": "Action & change",
-      "realization.verb-first": "Verb-first",
-      "realization.modulated": "Modal / negative context",
-      "realization.embedded": "Embedded in predicate",
-      "results.matching": "matching sentence pairs",
+      "category.condensation": "Condensation",
+      "category.explicitation": "Explicitation",
+      "category.transposition": "Transposition",
+      "category.congruence": "Congruence",
+      "realization.compact": "Compact",
+      "realization.balanced": "Balanced",
+      "realization.expanded": "Expanded",
+      "function.statement": "Statement",
+      "function.question": "Question",
+      "function.command": "Command",
+      "function.reaction": "Reaction",
+      "results.matching": "matching cue pairs",
       "chart.relational": "Relational",
       "chart.hierarchical": "Hierarchical",
       "chart.distributional": "Distributional",
-      "network.title": "Bilingual network map",
-      "network.caption": "Which English nominals repeatedly resolve to the same Chinese verbs?",
-      "network.top": "Top English terms",
+      "network.title": "Dialogue function network",
+      "network.caption": "Which dialogue functions recur in each translation profile?",
+      "network.top": "Top dialogue functions",
       "network.weight": "Minimum link weight",
       "network.resetZoom": "Reset",
       "network.help": "Drag the background to pan, scroll to zoom, drag nodes to arrange them, and double-click a node to pin it. Select a label to search it.",
-      "treemap.title": "Meaning × verb position",
-      "treemap.caption": "How does each meaning category divide across Chinese verb positions?",
-      "treemap.help": "Select a rectangle to apply its category and verb-position filters.",
-      "heatmap.title": "Frequent-term heatmap",
-      "heatmap.caption": "Where do the most frequent English nominals cluster across meaning categories?",
-      "heatmap.help": "Select a cell to combine its category and key-term search.",
+      "treemap.title": "Profile × length band",
+      "treemap.caption": "How are the four translation profiles distributed across compact, balanced and expanded target lengths?",
+      "treemap.help": "Select a rectangle to apply its profile and length-band filters.",
+      "heatmap.title": "Dialogue function by profile",
+      "heatmap.caption": "Which English line functions concentrate in each translation profile?",
+      "heatmap.help": "Select a populated cell to combine its profile and dialogue-function filters.",
       "table.title": "Corpus data",
       "table.caption": "Sort the current result set, inspect every field, or export it as CSV.",
       "table.export": "Export filtered CSV",
       "table.source": "English source",
-      "table.target": "Chinese translation",
-      "table.term": "Key term",
-      "table.category": "Category",
-      "table.position": "Verb position",
+      "table.target": "Cantonese subtitle",
+      "table.term": "Dialogue function",
+      "table.category": "Translation profile",
+      "table.position": "Length band",
       "table.checked": "Checked",
       "table.previous": "Previous",
       "table.next": "Next",
       "footer.project": "Translation Technology final project",
       "footer.note": "A static, open corpus explorer with no tracking.",
       "warning.label": "Content note",
-      "warning.body": "Subtitle dialogue may include profanity and mature themes.",
+      "warning.body": "Short film-dialogue excerpts may include profanity, violence and mature themes.",
       "toast.copied": "View link copied.",
       "toast.reset": "Filters reset.",
       "toast.empty": "No entries match this view.",
@@ -99,83 +103,87 @@
       "review.reset": "Reset local review",
     },
     zh: {
-      "brand.subtitle": "語料探索器",
+      "brand.subtitle": "字幕策略探索器",
       "nav.explore": "探索語料",
       "nav.report": "學習報告",
       "nav.codebook": "編碼簿",
       "nav.review": "品質檢查",
       "nav.ai": "AI 使用",
       "a11y.skip": "跳至內容",
-      "home.eyebrow": "五百組英中字幕語料",
-      "home.title": "當名詞變成動詞。",
-      "home.lede": "探索英文事件與狀態名詞如何展開為中文動詞，並以互相連動的圖表比較語意、句法與翻譯選擇。",
+      "home.eyebrow": "五百零二組英粵字幕語料",
+      "home.title": "每句對白，都經歷兩次抵達。",
+      "home.lede": "對照五百零二組提供的英粵電影字幕，並沿著互相連動的圖表追蹤壓縮、明示、結構轉換與對白功能。",
       "home.start": "開始探索",
       "home.read": "閱讀研究報告",
       "home.questionLabel": "研究問題",
-      "home.question": "哪些英文名詞意義會轉為中文動詞？動詞又出現在句中的哪個位置？",
-      "home.theory": "本分析以語法隱喻與詞性轉換說明「名詞動詞化」如何重新安排訊息焦點。",
-      "stat.entries": "句對",
-      "stat.terms": "英文關鍵詞",
+      "home.question": "提供的字幕句對中，哪些可見的翻譯剖面最常出現？",
+      "home.theory": "本分析結合壓縮、明示與詞性轉換，並以對白功能及譯文長度作為明確控制項。",
+      "stat.entries": "短句對",
+      "stat.terms": "對白功能",
       "stat.checked": "人工核對",
       "home.sourceLabel": "語料標示",
-      "home.source": "OpenSubtitles 2024 en-zh_CN，由五百行 CSV 提供。",
+      "home.source": "從使用者提供的 Final project.xlsx 抽出五百零二組完整且不重複的句對，並對照來源字幕。",
       "home.sourceDetails": "查看來源與限制",
       "quality.title": "仍需人工核對",
-      "quality.body": "已發佈資料尚未包含人工核對標記。提交前，請在品質檢查頁隨機審核至少五十筆。",
+      "quality.body": "固定種子的五十筆核對已完成。你可在品質檢查頁繼續檢查更多資料。",
       "quality.action": "開始五十筆審核",
       "explore.eyebrow": "互動語料",
       "explore.title": "讓每個圖表一起說故事。",
       "explore.intro": "使用搜尋與篩選，或點擊圖表中的詞語。所有圖表與資料表會同步更新，目前檢視也會保存在網址中。",
-      "filter.search": "搜尋原文、譯文或關鍵詞",
-      "filter.searchPlaceholder": "例如 attention、注意、permission",
-      "filter.category": "意義類別",
+      "filter.search": "搜尋英文、中文或分析特徵",
+      "filter.searchPlaceholder": "例如 statement、咩、expanded",
+      "filter.category": "翻譯剖面",
       "filter.allCategories": "全部類別",
       "filter.checked": "人工核對",
       "filter.allStatuses": "全部狀態",
       "filter.yes": "是",
       "filter.no": "否",
-      "filter.realization": "中文動詞位置",
-      "filter.allPositions": "全部位置",
+      "filter.realization": "長度區間",
+      "filter.allPositions": "全部長度區間",
       "filter.reset": "重設",
       "filter.copy": "複製檢視連結",
-      "category.communication": "言語與思考",
-      "category.control": "法律與控制",
-      "category.affect": "情緒與狀態",
-      "category.process": "行動與變化",
-      "realization.verb-first": "動詞起首",
-      "realization.modulated": "情態／否定語境",
-      "realization.embedded": "嵌入謂語",
-      "results.matching": "筆符合的句對",
+      "category.condensation": "壓縮",
+      "category.explicitation": "明示",
+      "category.transposition": "轉換",
+      "category.congruence": "對應",
+      "realization.compact": "精簡",
+      "realization.balanced": "均衡",
+      "realization.expanded": "擴展",
+      "function.statement": "陳述",
+      "function.question": "提問",
+      "function.command": "指令",
+      "function.reaction": "短促反應",
+      "results.matching": "筆符合的短句對",
       "chart.relational": "關聯",
       "chart.hierarchical": "層級",
       "chart.distributional": "分佈",
-      "network.title": "雙語詞語網絡",
-      "network.caption": "哪些英文名詞經常對應到相同的中文動詞？",
-      "network.top": "顯示英文詞數",
+      "network.title": "對白功能網絡",
+      "network.caption": "哪些對白功能常出現在各翻譯剖面中？",
+      "network.top": "顯示對白功能",
       "network.weight": "最小連線權重",
       "network.resetZoom": "重設",
       "network.help": "拖曳背景可平移，滾輪可縮放，拖曳節點可調整位置，雙擊節點可固定。點擊詞語即可搜尋。",
-      "treemap.title": "意義 × 動詞位置",
-      "treemap.caption": "每個意義類別如何分佈於不同中文動詞位置？",
-      "treemap.help": "點擊方格，同時套用該類別與動詞位置篩選。",
-      "heatmap.title": "高頻詞熱圖",
-      "heatmap.caption": "高頻英文名詞集中於哪些意義類別？",
-      "heatmap.help": "點擊方格，同時套用類別與關鍵詞搜尋。",
+      "treemap.title": "剖面 × 長度區間",
+      "treemap.caption": "四種翻譯剖面如何在精簡、均衡及擴展的譯文長度中分佈？",
+      "treemap.help": "點擊方格，同時套用該剖面與長度區間篩選。",
+      "heatmap.title": "對白功能與翻譯剖面",
+      "heatmap.caption": "哪些英文對白功能集中於各翻譯剖面？",
+      "heatmap.help": "點擊有數字的方格，同時套用剖面與對白功能搜尋。",
       "table.title": "語料資料",
       "table.caption": "排序目前結果、檢視完整欄位，或匯出 CSV。",
       "table.export": "匯出目前結果",
       "table.source": "英文原文",
-      "table.target": "中文譯文",
-      "table.term": "關鍵詞",
-      "table.category": "類別",
-      "table.position": "動詞位置",
+      "table.target": "粵語字幕",
+      "table.term": "對白功能",
+      "table.category": "翻譯剖面",
+      "table.position": "長度區間",
       "table.checked": "核對",
       "table.previous": "上一頁",
       "table.next": "下一頁",
       "footer.project": "翻譯科技期末專題",
       "footer.note": "不含追蹤功能的靜態公開語料網站。",
       "warning.label": "內容提示",
-      "warning.body": "字幕對話可能包含粗俗語言及成人主題。",
+      "warning.body": "電影片段短句可能包含粗俗語言、暴力及成人主題。",
       "toast.copied": "已複製檢視連結。",
       "toast.reset": "已重設篩選。",
       "toast.empty": "目前檢視沒有符合資料。",
@@ -192,24 +200,24 @@
 
   const PAGE_TITLES = {
     explore: {
-      en: "Nominal / Verb | NV Atlas Corpus Explorer",
-      zh: "名詞／動詞｜NV Atlas 語料探索器",
+      en: "Cue Shift | English-Cantonese Subtitle Explorer",
+      zh: "字幕換聲｜英粵字幕探索器",
     },
     report: {
-      en: "Learning Report | NV Atlas",
-      zh: "學習報告｜NV Atlas",
+      en: "Learning Report | Cue Shift",
+      zh: "學習報告｜字幕換聲",
     },
     codebook: {
-      en: "Codebook | NV Atlas",
-      zh: "編碼簿｜NV Atlas",
+      en: "Codebook | Cue Shift",
+      zh: "編碼簿｜字幕換聲",
     },
     review: {
-      en: "Quality Check | NV Atlas",
-      zh: "品質檢查｜NV Atlas",
+      en: "Quality Check | Cue Shift",
+      zh: "品質檢查｜字幕換聲",
     },
     about: {
-      en: "AI Use & Data Notes | NV Atlas",
-      zh: "AI 使用與資料說明｜NV Atlas",
+      en: "AI Use & Data Notes | Cue Shift",
+      zh: "AI 使用與資料說明｜字幕換聲",
     },
   };
 
@@ -259,6 +267,10 @@
 
   function realizationLabel(realization) {
     return t(`realization.${realization}`);
+  }
+
+  function functionLabel(feature) {
+    return t(`function.${feature}`);
   }
 
   function readReviewOverrides() {
@@ -373,8 +385,11 @@
       entry.target_text,
       entry.key_term,
       entry.target_verb,
+      entry.source_cue_ids,
+      entry.target_cue_id,
       entry.category,
       entry.realization,
+      entry.length_ratio,
     ].join(" ").toLocaleLowerCase();
     return haystack.includes(query.toLocaleLowerCase());
   }
@@ -523,10 +538,10 @@
     const visibleLinks = links.filter((link) => targetSet.has(link.target));
 
     const categoryColors = {
-      communication: "#406c83",
-      control: "#a87c31",
-      affect: "#d56a4c",
-      process: "#2d7a5c",
+      condensation: "#406c83",
+      explicitation: "#a87c31",
+      transposition: "#d56a4c",
+      congruence: "#2d7a5c",
     };
     const positions = new Map();
     const placeColumn = (nodes, x) => {
@@ -564,8 +579,10 @@
       if (state.q && (link.source === state.q || link.target === state.q)) {
         path.classList.add("active");
       }
+      const sourceLabel = functionLabel(link.source);
+      const targetLabel = categoryLabel(link.target);
       const title = document.createElementNS("http://www.w3.org/2000/svg", "title");
-      title.textContent = `${link.source} -> ${link.target}: ${link.weight}`;
+      title.textContent = `${sourceLabel} -> ${targetLabel}: ${link.weight}`;
       path.append(title);
       edgeLayer.append(path);
       updateNetworkEdge(path, positions);
@@ -574,6 +591,7 @@
     const addNode = (name, type, positionKey, count, extra) => {
       const position = positions.get(positionKey);
       const radius = Math.max(5, Math.min(22, 6 + Math.sqrt(count) * 3.2));
+      const displayName = type === "target" ? categoryLabel(name) : functionLabel(name);
       const group = document.createElementNS("http://www.w3.org/2000/svg", "g");
       group.setAttribute(
         "class",
@@ -583,21 +601,21 @@
       group.dataset.label = name;
       group.setAttribute("tabindex", "0");
       group.setAttribute("role", "button");
-      group.setAttribute("aria-label", `${name}: ${count}`);
+      group.setAttribute("aria-label", `${displayName}: ${count}`);
       group.setAttribute("transform", `translate(${position.x} ${position.y})`);
 
       const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
       circle.setAttribute("r", String(radius));
       circle.setAttribute("fill", type === "target" ? "#dfece3" : categoryColors[extra] || "#1f5945");
       const title = document.createElementNS("http://www.w3.org/2000/svg", "title");
-      title.textContent = `${name}: ${count}`;
+      title.textContent = `${displayName}: ${count}`;
       circle.append(title);
 
       const text = document.createElementNS("http://www.w3.org/2000/svg", "text");
       text.setAttribute("x", type === "target" ? String(radius + 8) : String(-radius - 8));
       text.setAttribute("y", "4");
       text.setAttribute("text-anchor", type === "target" ? "start" : "end");
-      text.textContent = name.length > 22 ? `${name.slice(0, 20)}...` : name;
+      text.textContent = displayName.length > 22 ? `${displayName.slice(0, 20)}...` : displayName;
 
       group.append(circle, text);
       let clickTimer;
@@ -608,12 +626,22 @@
         }
         event.stopPropagation();
         window.clearTimeout(clickTimer);
-        clickTimer = window.setTimeout(() => selectTerm(name), 240);
+        clickTimer = window.setTimeout(() => {
+          if (type === "target") {
+            selectTerm(name);
+          } else {
+            selectTerm(name);
+          }
+        }, 240);
       });
       group.addEventListener("keydown", (event) => {
         if (event.key === "Enter" || event.key === " ") {
           event.preventDefault();
-          selectTerm(name);
+          if (type === "target") {
+            selectTerm(name);
+          } else {
+            selectTerm(name);
+          }
         }
       });
       group.addEventListener("dblclick", (event) => {
@@ -645,7 +673,7 @@
         "target",
         `target:${target}`,
         targetCounts.get(target) || 0,
-        "process",
+        "congruence",
       );
     }
 
@@ -653,12 +681,12 @@
     leftLabel.setAttribute("class", "network-label");
     leftLabel.setAttribute("x", "70");
     leftLabel.setAttribute("y", "24");
-    leftLabel.textContent = "English key term";
+    leftLabel.textContent = t("network.top");
     const rightLabel = document.createElementNS("http://www.w3.org/2000/svg", "text");
     rightLabel.setAttribute("class", "network-label");
     rightLabel.setAttribute("x", "850");
     rightLabel.setAttribute("y", "24");
-    rightLabel.textContent = "Chinese verb";
+    rightLabel.textContent = t("table.category");
     scene.append(leftLabel, rightLabel);
     svg.append(scene);
     applyNetworkTransform();
@@ -791,8 +819,13 @@
       const block = document.createElement("div");
       block.className = "treemap-category";
       block.style.flex = `${categoryTotal} 1 0`;
-      const title = document.createElement("strong");
+      const title = document.createElement("button");
+      title.type = "button";
+      title.className = "treemap-category-label";
       title.textContent = `${categoryLabel(category)} · ${categoryTotal}`;
+      title.addEventListener("click", () => {
+        selectTerm(category);
+      });
       const cells = document.createElement("div");
       cells.className = "treemap-cells";
       for (const realization of REALIZATION_ORDER) {
@@ -814,7 +847,10 @@
         button.addEventListener("click", () => {
           state.category = category;
           state.realization = realization;
+          state.q = category;
           state.page = 1;
+          const search = document.querySelector("#search-input");
+          if (search) search.value = category;
           syncControls();
           renderAll();
         });
@@ -867,9 +903,13 @@
     for (const term of terms) {
       const th = document.createElement("th");
       th.scope = "col";
-      const span = document.createElement("span");
-      span.textContent = term;
-      th.append(span);
+      const label = document.createElement("button");
+      label.type = "button";
+      label.className = "heatmap-term";
+      label.textContent = functionLabel(term);
+      label.setAttribute("aria-label", `${functionLabel(term)}: search`);
+      label.addEventListener("click", () => selectTerm(term));
+      th.append(label);
       headRow.append(th);
     }
     thead.append(headRow);
@@ -878,7 +918,12 @@
       const row = document.createElement("tr");
       const th = document.createElement("th");
       th.scope = "row";
-      th.textContent = categoryLabel(category);
+      const rowLabel = document.createElement("button");
+      rowLabel.type = "button";
+      rowLabel.className = "heatmap-row-term";
+      rowLabel.textContent = categoryLabel(category);
+      rowLabel.addEventListener("click", () => selectTerm(category));
+      th.append(rowLabel);
       row.append(th);
       for (const term of terms) {
         const cell = document.createElement("td");
@@ -942,24 +987,33 @@
 
     for (const entry of pageRows) {
       const row = document.createElement("tr");
-      row.append(createTextCell(entry.id));
+      row.append(createTextCell(`Row ${entry.id}\nLength ${entry.length_ratio.toFixed(2)}`));
       row.append(createTextCell(entry.source_text));
       row.append(createTextCell(entry.target_text));
       const termCell = document.createElement("td");
       const termButton = document.createElement("button");
       termButton.type = "button";
       termButton.className = "term-link";
-      termButton.textContent = entry.key_term;
+      termButton.textContent = functionLabel(entry.key_term);
       termButton.addEventListener("click", () => selectTerm(entry.key_term));
       termCell.append(termButton);
       row.append(termCell);
       const categoryCell = document.createElement("td");
-      const category = document.createElement("span");
+      const category = document.createElement("button");
+      category.type = "button";
       category.className = `category-pill ${entry.category}`;
       category.textContent = categoryLabel(entry.category);
+      category.addEventListener("click", () => selectTerm(entry.category));
       categoryCell.append(category);
       row.append(categoryCell);
-      row.append(createTextCell(realizationLabel(entry.realization)));
+      const lengthCell = document.createElement("td");
+      const length = document.createElement("button");
+      length.type = "button";
+      length.className = "term-link";
+      length.textContent = realizationLabel(entry.realization);
+      length.addEventListener("click", () => selectTerm(entry.realization));
+      lengthCell.append(length);
+      row.append(lengthCell);
       const checkedCell = document.createElement("td");
       const checked = document.createElement("span");
       checked.className = `checked-pill ${entry.human_checked}`;
@@ -1048,12 +1102,15 @@
   function renderReview() {
     const list = document.querySelector("#review-list");
     if (!list) return;
-    const sample = deterministicReviewSample(corpus.entries, 50);
+    const requestedIds = new Set(corpus.meta.review_sample_ids || []);
+    const sample = requestedIds.size
+      ? corpus.entries.filter((entry) => requestedIds.has(entry.id))
+      : deterministicReviewSample(corpus.entries, 50);
     list.replaceChildren();
     let checked = 0;
     let errors = 0;
     for (const entry of sample) {
-      const status = reviewOverrides[entry.id] || "";
+      const status = reviewOverrides[entry.id] ?? entry.human_checked ?? "";
       if (status) checked += 1;
       if (status === "no") errors += 1;
       const item = document.createElement("article");
@@ -1064,9 +1121,12 @@
       const meta = document.createElement("div");
       meta.className = "review-meta";
       const id = document.createElement("span");
-      id.textContent = `ID ${entry.id} · ${entry.key_term} → ${entry.target_verb}`;
+      id.textContent = (
+        `ID ${entry.id} · ${functionLabel(entry.key_term)} · `
+        + `${categoryLabel(entry.category)} · ${realizationLabel(entry.realization)}`
+      );
       const source = document.createElement("span");
-      source.textContent = entry.source;
+      source.textContent = `Workbook row ${entry.id}`;
       meta.append(id, source);
 
       const pair = document.createElement("div");
@@ -1079,7 +1139,7 @@
       sourceCell.append(sourceLabel, sourceText);
       const targetCell = document.createElement("div");
       const targetLabel = document.createElement("small");
-      targetLabel.textContent = state.lang === "zh" ? "中文譯文" : "Chinese";
+      targetLabel.textContent = state.lang === "zh" ? "粵語字幕" : "Cantonese";
       const targetText = document.createElement("p");
       targetText.textContent = entry.target_text;
       targetCell.append(targetLabel, targetText);
@@ -1136,16 +1196,28 @@
 
   function exportReview() {
     const rows = corpus.entries
-      .filter((entry) => reviewOverrides[entry.id])
+      .filter((entry) => checkedStatus(entry) === "yes")
       .map((entry) => ({
         id: entry.id,
+        source_cue_ids: entry.source_cue_ids,
+        target_cue_id: entry.target_cue_id,
         key_term: entry.key_term,
-        human_checked: reviewOverrides[entry.id] === "yes" ? "yes" : "no",
+        category: entry.category,
+        length_band: entry.realization,
+        human_checked: reviewOverrides[entry.id] ?? entry.human_checked ?? "no",
       }));
     downloadCsv(
-      ["id", "key_term", "human_checked"],
+      [
+        "id",
+        "source_cue_ids",
+        "target_cue_id",
+        "key_term",
+        "category",
+        "length_band",
+        "human_checked",
+      ],
       rows,
-      "nv-review-results.csv",
+      "cue-shift-review-results.csv",
     );
   }
 
@@ -1158,16 +1230,27 @@
       "source",
       "category",
       "human_checked",
+      "ai_screened",
       "unit",
       "key_term",
       "target_verb",
       "realization",
+      "length_ratio",
       "genre",
       "corpus_version",
       "collection_date",
       "source_file_date",
+      "source_cue_ids",
+      "target_cue_id",
+      "source_timecode",
+      "target_timecode",
+      "alignment_shift_ms",
+      "alignment_gap_ms",
+      "english_word_count",
+      "cantonese_han_count",
+      "notes",
     ];
-    downloadCsv(fields, rows, "nvatlas-filtered-corpus.csv");
+    downloadCsv(fields, rows, "cue-shift-filtered-corpus.csv");
   }
 
   function downloadCsv(fields, rows, filename) {
@@ -1224,10 +1307,12 @@
     });
     top?.addEventListener("input", () => {
       state.top = Number(top.value);
+      syncControls();
       renderAll();
     });
     weight?.addEventListener("input", () => {
       state.weight = Number(weight.value);
+      syncControls();
       renderAll();
     });
     clear?.addEventListener("click", () => {
@@ -1333,6 +1418,10 @@
   }
 
   async function loadCorpus() {
+    if (window.NVATLAS_CORPUS?.entries?.length) {
+      corpus = window.NVATLAS_CORPUS;
+      return;
+    }
     const response = await fetch("data/corpus.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`Could not load corpus: ${response.status}`);
     corpus = await response.json();

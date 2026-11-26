@@ -862,12 +862,24 @@ main {
   border-right: 0;
 }
 
-.treemap-category > strong {
+.treemap-category-label {
+  width: 100%;
   padding: 0.75rem;
   color: var(--ink);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
   font-family: var(--serif);
   font-size: 0.82rem;
   line-height: 1.2;
+  text-align: left;
+}
+
+.treemap-category-label:hover,
+.treemap-category-label:focus {
+  color: var(--coral);
+  outline: 2px solid var(--ink);
+  outline-offset: -3px;
 }
 
 .treemap-cells {
@@ -932,7 +944,7 @@ main {
 
 .heatmap {
   width: 100%;
-  min-width: 680px;
+  min-width: 550px;
   border-collapse: collapse;
   table-layout: fixed;
 }
@@ -953,24 +965,54 @@ main {
   vertical-align: bottom;
 }
 
-.heatmap thead th span {
+.heatmap thead .heatmap-term {
   display: inline-block;
-  max-width: 48px;
+  max-width: 56px;
+  height: auto;
+  padding: 0;
   overflow: hidden;
+  color: var(--muted);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 0.6rem;
+  font-weight: 700;
   text-overflow: ellipsis;
-  transform: rotate(-52deg) translateX(10px);
+  transform: rotate(-45deg) translateX(8px);
   transform-origin: center;
   white-space: nowrap;
 }
 
+.heatmap thead .heatmap-term:hover,
+.heatmap thead .heatmap-term:focus {
+  color: var(--coral);
+  outline: 2px solid var(--ink);
+}
+
 .heatmap tbody th {
-  width: 126px;
+  width: 110px;
   padding-left: 0.7rem;
   color: var(--ink);
   font-family: var(--serif);
   font-size: 0.72rem;
   font-weight: 400;
   text-align: left;
+}
+
+.heatmap-row-term {
+  padding: 0;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: left;
+}
+
+.heatmap-row-term:hover,
+.heatmap-row-term:focus {
+  color: var(--coral);
+  outline: 2px solid var(--ink);
 }
 
 .heatmap td {
@@ -1096,24 +1138,38 @@ table {
   white-space: nowrap;
 }
 
-.category-pill.communication {
+.category-pill {
+  color: var(--ink);
+  background: var(--paper-deep);
+  border: 0;
+  cursor: pointer;
+}
+
+.category-pill.condensation {
   color: #275364;
   background: var(--blue-soft);
 }
 
-.category-pill.control {
+.category-pill.explicitation {
   color: #704c2e;
   background: var(--gold-soft);
 }
 
-.category-pill.affect {
+.category-pill.transposition {
   color: #754243;
   background: var(--coral-soft);
 }
 
-.category-pill.process {
+.category-pill.congruence {
   color: var(--green);
   background: var(--green-soft);
+}
+
+.category-pill:hover,
+.category-pill:focus {
+  filter: brightness(0.94);
+  outline: 2px solid var(--ink);
+  outline-offset: 1px;
 }
 
 .checked-pill.no {
