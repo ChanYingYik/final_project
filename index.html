@@ -6,7 +6,7 @@
     <meta name="description" content="An interactive English-Cantonese subtitle corpus explorer for Spider-Man: Brand New Day.">
     <title>S-Web of Words | Spider-Man: Brand New Day Subtitle Explorer</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="assets/styles.css?v=8">
+    <link rel="stylesheet" href="assets/styles.css?v=10">
   </head>
   <body>
     <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
@@ -138,6 +138,33 @@
               <option value="expanded" data-i18n="realization.expanded">Expanded</option>
             </select>
           </label>
+          <label>
+            <span data-i18n="filter.character">Named character</span>
+            <select id="character-filter">
+              <option value="all" data-i18n="filter.allCharacters">All character groups</option>
+              <option value="peter_spider" data-i18n="character.peter_spider">Peter Parker / Spider-Man</option>
+              <option value="scorpion" data-i18n="character.scorpion">Scorpion</option>
+              <option value="ned" data-i18n="character.ned">Ned</option>
+              <option value="mj" data-i18n="character.mj">MJ</option>
+              <option value="max" data-i18n="character.max">V-Max</option>
+              <option value="metzger" data-i18n="character.metzger">Director Metzger</option>
+              <option value="frank" data-i18n="character.frank">Frank</option>
+              <option value="cindy" data-i18n="character.cindy">Cindy</option>
+              <option value="leshy" data-i18n="character.leshy">Leshy</option>
+              <option value="other" data-i18n="character.other">Other named character</option>
+              <option value="multiple" data-i18n="character.multiple">Multiple named characters</option>
+              <option value="none" data-i18n="character.none">No named character</option>
+            </select>
+          </label>
+          <label>
+            <span data-i18n="filter.register">Chinese register</span>
+            <select id="register-filter">
+              <option value="all" data-i18n="filter.allRegisters">All registers</option>
+              <option value="cantonese_leaning" data-i18n="register.cantonese_leaning">Cantonese-leaning</option>
+              <option value="mixed_register" data-i18n="register.mixed_register">Mixed register</option>
+              <option value="written_chinese" data-i18n="register.written_chinese">Written Chinese</option>
+            </select>
+          </label>
           <div class="control-actions">
             <button class="button quiet" id="reset-filters" type="button" data-i18n="filter.reset">Reset</button>
             <button class="button quiet" id="copy-view" type="button" data-i18n="filter.copy">Copy view link</button>
@@ -219,10 +246,46 @@
           </article>
         </div>
 
+        <div class="analysis-grid">
+          <article class="chart-card character-card">
+            <div class="chart-heading">
+              <div>
+                <p class="chart-index">04</p>
+                <h3 data-i18n="characterChart.title">Named character patterns</h3>
+              </div>
+              <span class="chart-type">Character</span>
+            </div>
+            <p class="chart-caption" data-i18n="characterChart.caption">
+              Which named characters appear alongside each translation profile?
+            </p>
+            <div class="character-stage" id="character-stage" aria-live="polite"></div>
+            <p class="chart-help" data-i18n="characterChart.help">
+              Only character names stated in the source or subtitle are grouped. This is not speaker attribution.
+            </p>
+          </article>
+
+          <article class="chart-card register-card">
+            <div class="chart-heading">
+              <div>
+                <p class="chart-index">05</p>
+                <h3 data-i18n="registerChart.title">Cantonese and written Chinese</h3>
+              </div>
+              <span class="chart-type">Register</span>
+            </div>
+            <p class="chart-caption" data-i18n="registerChart.caption">
+              How do Cantonese lexical markers and written-Chinese forms distribute across the corpus?
+            </p>
+            <div class="register-stage" id="register-stage" aria-live="polite"></div>
+            <p class="chart-help" data-i18n="registerChart.help">
+              Select a register to filter the corpus. This is a text-based lexical measure, not an audio judgment.
+            </p>
+          </article>
+        </div>
+
         <article class="data-card" id="data-grid">
           <div class="data-heading">
             <div>
-              <p class="chart-index">04</p>
+                  <p class="chart-index">06</p>
               <h3 data-i18n="table.title">Corpus data</h3>
               <p data-i18n="table.caption">
                 Sort the current result set, inspect every field, or export it as CSV.
@@ -240,6 +303,8 @@
                   <th><button data-sort="key_term" data-i18n="table.term">Dialogue function</button></th>
                   <th><button data-sort="category" data-i18n="table.category">Translation profile</button></th>
                   <th><button data-sort="realization" data-i18n="table.position">Length band</button></th>
+                  <th><button data-sort="character_group" data-i18n="table.character">Character</button></th>
+                  <th><button data-sort="language_register" data-i18n="table.register">Register</button></th>
                   <th><button data-sort="human_checked" data-i18n="table.checked">Checked</button></th>
                 </tr>
               </thead>
@@ -257,12 +322,46 @@
       </section>
     </main>
 
+    <div class="entry-panel-backdrop" id="entry-panel-backdrop" hidden></div>
+    <aside class="entry-panel" id="entry-panel" role="dialog" aria-modal="true" aria-labelledby="entry-panel-help" hidden>
+      <button class="entry-panel-close" id="entry-panel-close" type="button" aria-label="Close entry details"><span aria-hidden="true">×</span></button>
+      <p class="eyebrow" id="entry-panel-kicker">Workbook row</p>
+      <h2 id="entry-panel-help">Entry details</h2>
+      <div class="entry-panel-pair">
+        <div><small>English</small><p id="entry-source-text"></p></div>
+        <div><small>Traditional Chinese</small><p id="entry-target-text"></p></div>
+      </div>
+      <dl class="entry-panel-meta">
+        <div><dt>Translation profile</dt><dd><a id="entry-category-link" href="codebook.html#condensation"><span id="entry-category"></span></a></dd></div>
+        <div><dt>Dialogue function</dt><dd id="entry-function"></dd></div>
+        <div><dt>Length ratio</dt><dd id="entry-length"></dd></div>
+        <div><dt>Named character</dt><dd id="entry-character"></dd></div>
+        <div><dt>Chinese register</dt><dd id="entry-register"></dd></div>
+        <div><dt>Human checked</dt><dd id="entry-checked"></dd></div>
+      </dl>
+      <section class="entry-panel-reason">
+        <h3 data-i18n="detail.why">Why this profile</h3>
+        <p id="entry-reason"></p>
+      </section>
+      <section class="entry-panel-source">
+        <small id="entry-markers-label">Register markers</small>
+        <p id="entry-markers"></p>
+        <small id="entry-source-label">Source</small>
+        <p id="entry-source"></p>
+      </section>
+      <div class="entry-panel-actions">
+        <button class="button quiet" id="entry-previous" type="button" data-i18n="detail.previous">Previous entry</button>
+        <button class="button quiet" id="entry-next" type="button" data-i18n="detail.next">Next entry</button>
+        <button class="button primary" id="entry-copy-link" type="button" data-i18n="detail.copy">Copy entry link</button>
+      </div>
+    </aside>
+
     <footer class="site-footer">
       <p><strong>S-Web of Words</strong> · <span data-i18n="footer.project">Spider-Man: Brand New Day corpus · Translation Technology final project</span></p>
       <p data-i18n="footer.note">A static bilingual subtitle explorer with no tracking.</p>
     </footer>
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
-    <script src="data/corpus.js?v=1" defer></script>
-    <script src="assets/app.js?v=9" defer></script>
+    <script src="data/corpus.js?v=2" defer></script>
+    <script src="assets/app.js?v=10" defer></script>
   </body>
 </html>
